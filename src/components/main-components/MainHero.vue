@@ -1,31 +1,76 @@
 <script>
+import { store } from '../../store';
+
 export default {
     name: 'MainHero',
+    data() {
+        return {
+            store,
+        }
+    },
 }
 </script>
 
 <template>
     <section id="hero">
         <div class="wrapped-container h-100 d-flex">
-            <div class="inside m-auto">
-                <h1>Cose</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quasi adipisci deleniti natus,
-                    magnam
-                    ipsam ducimus voluptatem dolorum eum perspiciatis eligendi fugit tempore sint repellendus beatae,
-                    sequi
-                    molestias veniam possimus?
-                </p>
+            <div class="hero-inside-info m-auto text-center position-relative">
+                <div class="hero-txt mb-4">
+                    <span id="pre-title">Image, Create, Experience</span>
+                    <h1 class="mb-2">We Animated <br> With Ninja-Like Precision</h1>
+                    <p>
+                        We are a character-driven animation studio striving to make high-quality animations.
+                    </p>
+                </div>
+
+                <div class="hero-buttons mb-5">
+                    <button class="me-5">ITEM</button>
+                    <button>ITEM</button>
+                </div>
+
+                <div class="middle-video position-absolute w-100">
+                    <img :src="store.getImagePath('middle')" alt="Midle Video thumb">
+                </div>
             </div>
         </div>
+        <img :src="store.getImagePath('bottom-shape')" alt="" class="shape-top">
     </section>
 </template>
 
 <style lang="scss">
+@use '../../styles/partials/variables' as *;
+
+
 section#hero {
+    padding-top: 130px;
     background-image: url(../../assets/banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px; //To remove
+}
+
+div.hero-inside-info {
+    span {
+        color: $brand-orange;
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        font-size: 1.55rem;
+    }
+}
+
+img.shape-top {
+    background-image: url(../../assets/preloader.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
 }
 </style>
