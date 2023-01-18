@@ -69,7 +69,7 @@ div.hero-inside-info {
         font-size: 6rem;
         font-weight: 700;
         color: $white;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     p {
