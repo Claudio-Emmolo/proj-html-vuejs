@@ -33,7 +33,11 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+header {
+    z-index: 3;
+}
+
 img#main-logo {
     width: 180px;
 }

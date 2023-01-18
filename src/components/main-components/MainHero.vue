@@ -1,8 +1,10 @@
 <script>
 import { store } from '../../store';
+import HeroIllustrations from './HeroIllustrations.vue'
 
 export default {
     name: 'MainHero',
+    components: { HeroIllustrations },
     data() {
         return {
             store,
@@ -12,7 +14,8 @@ export default {
 </script>
 
 <template>
-    <section id="hero">
+    <section id="hero" class="position-relative">
+        <HeroIllustrations />
         <div class="wrapped-container h-100 d-flex">
             <div class="hero-inside-info m-auto text-center position-relative">
                 <div class="hero-txt mb-4">
@@ -33,7 +36,7 @@ export default {
                 </div>
             </div>
         </div>
-        <img :src="store.getImagePath('bottom-shape')" alt="" class="shape-top">
+        <img :src="store.getImagePath('bottom-shape')" alt="" class="bottom-shape">
     </section>
 </template>
 
@@ -42,13 +45,15 @@ export default {
 
 
 section#hero {
-    padding-top: 130px;
+    padding-top: 220px;
     background-image: url(../../assets/banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 div.hero-inside-info {
+    padding-bottom: 200px;
+
     span {
         color: $brand-orange;
         font-size: 1.8rem;
@@ -65,7 +70,7 @@ div.hero-inside-info {
     }
 }
 
-img.shape-top {
+img.bottom-shape {
     background-image: url(../../assets/preloader.png);
     background-position: bottom;
     background-size: contain;
