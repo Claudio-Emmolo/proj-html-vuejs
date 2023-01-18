@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="position-absolute w-100 py-3">
         <div class="wrapped-container d-flex justify-content-between">
 
             <img :src="store.getImagePath('logo')" alt="Main Logo" id="main-logo">
