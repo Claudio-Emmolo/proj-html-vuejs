@@ -70,6 +70,11 @@ div.hero-inside-info {
     }
 }
 
+div.middle-video {
+    transform: scale(1.65);
+    bottom: -80%
+}
+
 img.bottom-shape {
     background-image: url(../../assets/preloader.png);
     background-position: bottom;
