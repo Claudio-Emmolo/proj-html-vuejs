@@ -61,10 +61,10 @@ nav ul {
         margin: auto 1rem;
 
         a {
-            font-size: 1.58rem;
+            font-size: 1.5rem;
+            font-weight: 600;
             text-decoration: none;
             color: $white;
-            font-weight: bold;
         }
 
         a.quote-btn {

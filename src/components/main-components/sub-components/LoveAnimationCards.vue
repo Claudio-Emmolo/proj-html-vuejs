@@ -16,7 +16,7 @@ export default {
     <div class="card"
         :class="(cardProprety.tag == 1) ? 'card-bg-orange' : '' || (cardProprety.tag == 2) ? 'card-bg-blue' : '' || (cardProprety.tag == 3) ? 'card-bg-pink' : ''">
         <img :src="store.getImagePath(cardProprety.imgPath)" alt="Smart1 icon">
-        <h3 class="text-center">{{ cardProprety.title }}</h3>
+        <h3>{{ cardProprety.title }}</h3>
         <p>
             {{ cardProprety.subtitle }}
         </p>
@@ -31,6 +31,7 @@ div.card {
     border-radius: 2rem;
     padding: 2.5rem 1rem;
     border: 2px solid #e3e3ed;
+    text-align: center;
 
     img {
         margin: auto;
@@ -46,7 +47,7 @@ div.card {
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
 }
 

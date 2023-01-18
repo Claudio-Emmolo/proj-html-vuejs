@@ -19,8 +19,8 @@ export default {
         <div class="wrapped-container hero-content h-100 d-flex">
             <div class="hero-inside-info m-auto text-center position-relative">
                 <div class="hero-txt mb-4">
-                    <span id="pre-title">Image, Create, Experience</span>
-                    <h1 class="mb-2">We Animated <br> With Ninja-Like Precision</h1>
+                    <span id="pre-title" class="d-block">Image, Create, Experience</span>
+                    <h1>We Animate <br> With Ninja-Like Precision</h1>
                     <p>
                         We are a character-driven animation studio striving to make high-quality animations.
                     </p>
@@ -60,17 +60,21 @@ div.hero-inside-info {
 
     span {
         color: $brand-orange;
-        font-size: 1.8rem;
+        font-size: 1.85rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
     }
 
     h1 {
-        font-size: 5.5rem;
+        font-size: 6rem;
+        font-weight: 700;
         color: $white;
+        margin-bottom: 1.5rem;
     }
 
     p {
         color: $white;
-        font-size: 1.55rem;
+        font-size: 1.8rem;
     }
 }
 

@@ -87,12 +87,12 @@ div.love-info-txt {
     h2 {
         font-weight: bold;
         color: $brand-purple;
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     p {
         color: $brand-purple;
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         margin: 1rem 0 2rem;
     }
 }
