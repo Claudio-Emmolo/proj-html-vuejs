@@ -80,7 +80,7 @@ div.middle-video {
 }
 
 img.bottom-shape {
-    background-image: url(../../assets/preloader.png);
+    background-image: url(../../assets/banner-bg.png);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
