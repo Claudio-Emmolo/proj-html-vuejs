@@ -7,7 +7,27 @@ export default {
     components: { LoveAnimationCards },
     data() {
         return {
-            store
+            store,
+            loveAnimCardList: [
+                {
+                    tag: 1,
+                    imgPath: 'smart1',
+                    title: '3D modeling',
+                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave.Yep, we'll drill depp to deliver above and beyond your expectations."
+                },
+                {
+                    tag: 2,
+                    imgPath: 'smart2',
+                    title: 'Collaboration',
+                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave.Yep, we'll drill depp to deliver above and beyond your expectations."
+                },
+                {
+                    tag: 3,
+                    imgPath: 'smart3',
+                    title: 'Creativity',
+                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave.Yep, we'll drill depp to deliver above and beyond your expectations."
+                },
+            ]
         }
     },
 }
@@ -19,20 +39,19 @@ export default {
         <div class="wrapped-container d-flex flex-column w-100">
             <div class="love-info-txt m-auto text-center">
 
-                <span>PreTitle</span>
-                <h2>Lorem ipsum <br> dolor sit amet <br> consectetur.</h2>
+                <span>Our Love For Animation</span>
+                <h2>We're Storytelling <br> Exports With Creative <br> Smarts</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eaque maiores molestiae sequi enim
-                    fuga
-                    natus reprehenderit ab ex debitis. Reprehenderit molestias ex quidem consequatur provident .
+                    Our culture inspires the creative and innovative spirit found throughout our Studio. We breathe life
+                    into new ideas!
+
                 </p>
             </div>
             <div class="container">
                 <div class="row justify-content-end">
                     <!-- Import Card -->
-                    <LoveAnimationCards class="col-3 mx-3" />
-                    <LoveAnimationCards class="col-3 mx-3" />
-                    <LoveAnimationCards class="col-3 mx-3" />
+                    <LoveAnimationCards v-for="cardProprety, index in loveAnimCardList" class="col-3 mx-3"
+                        :cardProprety="cardProprety" />
                 </div>
             </div>
         </div>
@@ -40,11 +59,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../styles/partials/variables' as *;
+
 section#love-animation {
     margin-top: 300px;
 }
 
 img {
+    width: 700px;
     height: 120%;
 }
 
@@ -56,11 +78,22 @@ div.love-info-txt {
     padding-top: 150px;
 
     span {
-        font-size: 1.5rem;
+        display: block;
+        color: $brand-blue;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     h2 {
-        font-size: 4.5rem;
+        font-weight: bold;
+        color: $brand-purple;
+        font-size: 4rem;
+    }
+
+    p {
+        color: $brand-purple;
+        font-size: 1.3rem;
+        margin: 1rem 0 2rem;
     }
 }
 </style>
