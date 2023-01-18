@@ -31,7 +31,9 @@ export default {
                             {{ item }}
                         </a>
                     </li>
-                    <a href="#" class="quote-btn">Get a quote</a>
+                    <li>
+                        <a href="#" class="quote-btn">Get a Quote</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -49,19 +51,30 @@ header {
 
 img#main-logo {
     width: 180px;
+    object-fit: contain;
 }
 
 nav ul {
     list-style-type: none;
 
     li {
-        margin: 0 1rem;
+        margin: auto 1rem;
 
         a {
+            font-size: 1.58rem;
             text-decoration: none;
             color: $white;
             font-weight: bold;
         }
+
+        a.quote-btn {
+            color: $brand-purple;
+            background-color: $brand-pink;
+            padding: .8rem 2rem;
+            border-radius: 2rem;
+        }
+
     }
+
 }
 </style>

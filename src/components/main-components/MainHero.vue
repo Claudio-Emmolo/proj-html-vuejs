@@ -16,7 +16,7 @@ export default {
 <template>
     <section id="hero" class="position-relative">
         <HeroIllustrations />
-        <div class="wrapped-container h-100 d-flex">
+        <div class="wrapped-container hero-content h-100 d-flex">
             <div class="hero-inside-info m-auto text-center position-relative">
                 <div class="hero-txt mb-4">
                     <span id="pre-title">Image, Create, Experience</span>
@@ -51,8 +51,12 @@ section#hero {
     background-size: cover;
 }
 
-div.hero-inside-info {
+div.hero-content {
     padding-bottom: 200px;
+}
+
+div.hero-inside-info {
+    padding-bottom: 255px;
 
     span {
         color: $brand-orange;
@@ -72,7 +76,7 @@ div.hero-inside-info {
 
 div.middle-video {
     transform: scale(1.65);
-    bottom: -80%
+    bottom: -80%;
 }
 
 img.bottom-shape {
