@@ -6,7 +6,28 @@ export default {
     data() {
         return {
             store,
-            footerNavbarList: ['About Us', 'Porfolio', 'Pricing', 'Career', 'Contact']
+            footerNavbarList: [
+                {
+                    title: 'About Us',
+                    url: '#'
+                },
+                {
+                    title: 'Porfolio',
+                    url: '#'
+                },
+                {
+                    title: 'Pricing',
+                    url: '#'
+                },
+                {
+                    title: 'Career',
+                    url: '#'
+                },
+                {
+                    title: 'Contact',
+                    url: '#'
+                },
+            ]
         }
     },
 }
@@ -14,12 +35,14 @@ export default {
 
 <template>
     <section id="top-footer" class="d-flex justify-content-between">
-        <img :src="store.getImagePath('footer-logo')" alt="Anido Logo">
+        <a href="#">
+            <img :src="store.getImagePath('footer-logo')" alt="Anido Logo">
+        </a>
         <nav class="d-flex">
             <ul class="m-auto d-flex align-items-center p-0 ">
                 <li v-for="item in footerNavbarList">
-                    <a href="#">
-                        {{ item }}
+                    <a :href="item.url">
+                        {{ item.title }}
                     </a>
                 </li>
             </ul>

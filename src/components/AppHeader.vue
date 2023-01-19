@@ -7,13 +7,35 @@ export default {
         return {
             store,
             navbarItems: [
-                'Home',
-                'About Us',
-                'Portfolio',
-                'Our Process',
-                'Pricing',
-                'Blog',
-                'Contact',]
+                {
+                    title: 'Home',
+                    url: '#'
+                },
+                {
+                    title: 'About Us',
+                    url: '#'
+                },
+                {
+                    title: 'Portfolio',
+                    url: '#'
+                },
+                {
+                    title: 'Our Process',
+                    url: '#'
+                },
+                {
+                    title: 'Pricing',
+                    url: '#'
+                },
+                {
+                    title: 'Blog',
+                    url: '#'
+                },
+                {
+                    title: 'Contact',
+                    url: '#'
+                },
+            ]
         }
     },
 }
@@ -22,13 +44,14 @@ export default {
 <template>
     <header class="position-absolute w-100">
         <div class="wrapped-container d-flex justify-content-between">
-
-            <img :src="store.getImagePath('logo')" alt="Main Logo" id="main-logo">
+            <a href="#">
+                <img :src="store.getImagePath('logo')" alt="Main Logo" id="main-logo">
+            </a>
             <nav class="my-auto">
                 <ul class="m-0 d-flex align-item-center">
                     <li v-for="item in navbarItems">
-                        <a href="#">
-                            {{ item }}
+                        <a :href="item.url">
+                            {{ item.title }}
                         </a>
                     </li>
                     <li>
