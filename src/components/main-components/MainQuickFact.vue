@@ -64,12 +64,11 @@ img.wave-bottom {
 }
 
 img.wave-top {
-    background-position: top;
-
+    background-position-y: -120px;
 }
 
 img.wave-bottom {
-    background-position-y: -750px;
+    background-position-y: -830px;
 }
 
 img.globe-bg-img {
@@ -85,6 +84,7 @@ section#main-quick-fact {
     background-image: url(../../assets/preloader.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: -155px;
     color: $general-quick-fact;
     padding: 120px 0;
 }

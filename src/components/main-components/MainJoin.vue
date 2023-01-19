@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <img :src="store.getImagePath('shape-top')" alt="Shape Top" class="shape-wave">
+    <img :src="store.getImagePath('shape-top')" alt="Shape Top" class="shape-wave wave-top">
     <section id="join">
         <div class="wrapped-container">
 
@@ -40,6 +40,7 @@ section#join {
     background-image: url(../../assets/preloader.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: -155px;
 
     padding: 5rem 0;
 }
@@ -51,8 +52,12 @@ img.shape-wave {
     background-repeat: no-repeat;
 }
 
+img.wave-top {
+    background-position-y: -120px;
+}
+
 img.wave-bottom {
-    background-position-y: -643px;
+    background-position-y: -830px;
 }
 
 div.info-txt {

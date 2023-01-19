@@ -169,6 +169,6 @@ img.bottom-shape {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 200px;
+    height: 220px;
 }
 </style>
