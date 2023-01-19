@@ -1,9 +1,11 @@
 <script>
 import FooterTop from './footer-components/FooterTop.vue';
+import FooterBottom from './footer-components/FooterBottom.vue';
+
 
 export default {
     name: 'AppFooter',
-    components: { FooterTop }
+    components: { FooterTop, FooterBottom }
 }
 </script>
 
@@ -15,6 +17,9 @@ export default {
             <FooterTop />
 
             <div class="separator"></div>
+
+            <!-- Import Bottom Footer Section -->
+            <FooterBottom />
         </div>
     </footer>
 </template>
