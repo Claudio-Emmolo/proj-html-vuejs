@@ -1,11 +1,39 @@
 <script>
-import { store } from '../../store'
+import { store } from '../../store';
+import TeamMemberCard from './sub-components/TeamMemberCard.vue'
 
 export default {
     name: 'MainTeamMember',
+    components: { TeamMemberCard },
     data() {
         return {
-            store
+            store,
+            teamMemberInfoList: [
+                {
+                    imgPath: 'team1',
+                    name: 'Robert Coleman',
+                    role: 'Owner & Creative Director',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Don Woods',
+                    role: 'Administrator',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Tomas Nash',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+            ]
         }
     },
 }
@@ -26,35 +54,7 @@ export default {
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col-4 g-5">
-                        <div class="inside-profile-card position-relative text-center">
-                            <img :src="store.getImagePath('team1')" alt="" class="position-absolute">
-                            <div class="txt">
-                                <h4>Nome Cognome</h4>
-                                <span class="d-block">Mansione</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 g-5">
-                        <div class="inside-profile-card position-relative text-center">
-                            <img :src="store.getImagePath('team1')" alt="" class="position-absolute">
-                            <div class="txt">
-                                <h4>Nome Cognome</h4>
-                                <span class="d-block">Mansione</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 g-5">
-                        <div class="inside-profile-card position-relative text-center">
-                            <img :src="store.getImagePath('team1')" alt="" class="position-absolute">
-                            <div class="txt">
-                                <h4>Nome Cognome</h4>
-                                <span class="d-block">Mansione</span>
-                            </div>
-                        </div>
-                    </div>
+                    <TeamMemberCard v-for="teamInfo in teamMemberInfoList" :teamInfo="teamInfo" />
 
                 </div>
             </div>
@@ -74,31 +74,5 @@ div.info-txt {
     text-align: center;
     padding: 0 27rem;
     margin-bottom: 100px;
-}
-
-div.inside-profile-card {
-    background-color: $brand-light-orange;
-    border-radius: 2rem;
-
-    img {
-        top: -25%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    div.txt {
-        padding-top: 180px;
-
-        h4 {
-            font-size: 1.8rem;
-            color: $brand-purple;
-        }
-
-        span {
-            font-size: 1.5rem;
-            font-weight: 100;
-            padding-bottom: 2rem;
-        }
-    }
 }
 </style>
