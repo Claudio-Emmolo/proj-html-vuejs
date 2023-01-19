@@ -5,6 +5,8 @@ import MainQuickFact from './main-components/MainQuickFact.vue';
 import MainOurWorks from './main-components/MainOurWorks.vue';
 import MainOurProcess from './main-components/MainOurProcess.vue';
 import MainTeamMember from './main-components/MainTeamMember.vue';
+import MainClients from './main-components/MainClients.vue';
+
 
 
 
@@ -12,7 +14,7 @@ import MainTeamMember from './main-components/MainTeamMember.vue';
 
 export default {
     name: 'AppMain',
-    components: { MainHero, MainLoveAnimationSection, MainQuickFact, MainOurWorks, MainOurProcess, MainTeamMember }
+    components: { MainHero, MainLoveAnimationSection, MainQuickFact, MainOurWorks, MainOurProcess, MainTeamMember, MainClients }
 }
 </script>
 
@@ -30,6 +32,8 @@ export default {
         <MainOurProcess />
         <!-- Import Main Team Meber Section -->
         <MainTeamMember />
+        <!-- Import Main Our Clients Section -->
+        <MainClients />
 
 
     </main>

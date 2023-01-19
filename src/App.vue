@@ -31,6 +31,7 @@ div.info-txt {
         color: $brand-blue;
         font-size: 2rem;
         margin-bottom: 1rem;
+        font-weight: 600;
     }
 
     h2 {
