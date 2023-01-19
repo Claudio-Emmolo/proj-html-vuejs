@@ -1,10 +1,11 @@
 <script>
 import { store } from '../../../store';
+import SocialIcons from './SocialIcons.vue';
 
 export default {
     name: 'TeamMemberCard',
     props: ['teamInfo'],
-    components: {},
+    components: { SocialIcons },
     data() {
         return {
             store
@@ -20,12 +21,15 @@ export default {
             <div class="txt">
                 <h4>{{ teamInfo.name }}</h4>
                 <span class="d-block">{{ teamInfo.role }}</span>
+
+                <SocialIcons :urlFacebook="teamInfo.facebookUrl" :urlTwitter="teamInfo.twitterUrl"
+                    :urlInstagram="teamInfo.InstagramUrl" class="social-icons" />
             </div>
         </div>
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../../../styles/partials/variables' as *;
 
 
@@ -50,8 +54,11 @@ div.inside-profile-card {
         span {
             font-size: 1.5rem;
             font-weight: 100;
-            padding-bottom: 2rem;
         }
+    }
+
+    .social-icons {
+        padding: 3rem 0;
     }
 }
 </style>
