@@ -37,7 +37,8 @@ img.left-man {
 
 img.right-man {
     bottom: 37.5%;
-    right: 1%
+    right: 1%;
+    z-index: 3;
 }
 
 img.globe1 {
@@ -51,24 +52,26 @@ img.globe2 {
 }
 
 img.globe3 {
-    top: -18%;
+    top: -17%;
     left: 36%;
 }
 
 img.light {
-    top: 11%;
+    top: 12%;
     right: 11%;
     transform: scale(1.3);
     z-index: 2;
 }
 
 img.dots-left {
-    top: 14%;
-    left: 8%;
+    top: 21%;
+    left: 12%;
+    transform: scale(1.4);
 }
 
 img.dots-right {
-    top: 8%;
-    right: 4%;
+    top: 11%;
+    right: 5%;
+    transform: scale(1.1);
 }
 </style>
