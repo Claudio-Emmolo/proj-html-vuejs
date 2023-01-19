@@ -43,14 +43,23 @@ export default {
                     </div>
 
                     <div class="row">
-
                         <OutProcessCard v-for="cardContent in ourProcessCardContentList" :cardContent="cardContent" />
+                    </div>
 
+                    <div class="arrow-btn row">
+                        <button>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
 
                 </div>
             </div>
         </div>
+        <img :src="store.getImagePath('smart4')" alt="Rocket img" class="rocket position-absolute">
+
     </section>
 </template>
 
@@ -88,5 +97,28 @@ div.info-txt {
         font-size: 1.35rem;
         margin: 1rem 0 2rem;
     }
+}
+
+div.arrow-btn {
+    padding: 2rem 0;
+    margin-left: 1rem;
+
+    button {
+        width: max-content;
+        border: 1px solid $brand-purple;
+        background-color: transparent;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 0 .3rem;
+        opacity: .5;
+        font-size: 2rem;
+    }
+}
+
+img.rocket {
+    width: 200px;
+    height: 200px;
+    right: 10px
 }
 </style>

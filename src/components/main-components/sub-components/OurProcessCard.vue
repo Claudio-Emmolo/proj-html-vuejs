@@ -41,8 +41,8 @@ div.card-content {
 
     div.img-bg-rounded {
         margin: auto;
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         background-color: $brand-light-orange;
         border-radius: 50%;
         margin-bottom: 1.5rem;
@@ -62,7 +62,7 @@ div.card-content {
         top: 0;
         right: 20px;
 
-        width: 40px;
+        width: 50px;
         height: 100px;
         background-color: $brand-light-purple;
         border-radius: 0 0 1rem 1rem;
