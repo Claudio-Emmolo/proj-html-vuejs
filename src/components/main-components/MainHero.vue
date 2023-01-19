@@ -34,7 +34,10 @@ export default {
                 <div class="middle-video position-absolute w-100">
                     <div class="play-button position-relative">
                         <button class="play position-absolute d-flex">
-                            <i class="fa-solid fa-play m-auto"></i>
+                            <div class="internal-bg m-auto d-flex">
+
+                                <i class="fa-solid fa-play m-auto"></i>
+                            </div>
                         </button>
                         <img :src="store.getImagePath('middle')" alt="Midle Video thumb">
                     </div>
@@ -112,20 +115,28 @@ div.middle-video {
     transform: scale(1.65);
     bottom: -80%;
 
+
     button.play {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $white;
-        background-color: $play-button-video;
+        background-color: $play-button-video-outside;
         border: 0;
 
         border-radius: 50%;
 
+        div.internal-bg {
+            width: 60px;
+            height: 60px;
+            background-color: $play-button-video-inside;
+            border-radius: 50%;
+        }
+
         i {
-            font-size: 3rem;
+            font-size: 1.5rem;
             padding-left: 5px;
         }
 

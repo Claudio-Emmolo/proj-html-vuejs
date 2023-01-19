@@ -59,6 +59,7 @@ img.light {
     top: 11%;
     right: 11%;
     transform: scale(1.3);
+    z-index: 2;
 }
 
 img.dots-left {
