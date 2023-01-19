@@ -38,13 +38,13 @@ div.inside-profile-card {
     border-radius: 2rem;
 
     img {
-        top: -25%;
+        top: -15%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     div.txt {
-        padding-top: 180px;
+        padding-top: 200px;
 
         h4 {
             font-size: 1.8rem;
