@@ -11,7 +11,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../../../styles/partials/variables' as *;
+@use '../../styles/partials/variables' as *;
 
 
 button.arrow-slider {

@@ -1,6 +1,6 @@
 <script>
 import { store } from '../../../store';
-import SocialIcons from './SocialIcons.vue';
+import SocialIcons from '../../general-components/SocialIcons.vue';
 
 export default {
     name: 'TeamMemberCard',

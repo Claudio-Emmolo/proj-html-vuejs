@@ -1,8 +1,8 @@
 <script>
 import { store } from '../../store';
 import OutProcessCard from './sub-components/OurProcessCard.vue';
-import ArrowButtonLeft from './sub-components/ArrowButtonLeft.vue';
-import ArrowButtonRight from './sub-components/ArrowButtonRight.vue';
+import ArrowButtonLeft from '../general-components/ArrowButtonLeft.vue';
+import ArrowButtonRight from '../general-components/ArrowButtonRight.vue';
 
 export default {
     name: 'MainOurProcess',
