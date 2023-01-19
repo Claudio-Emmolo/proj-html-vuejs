@@ -35,8 +35,8 @@ export default {
 <template>
     <img :src="store.getImagePath('shape-top')" alt="Shape Wave Top" class="wave-top">
     <section id="main-quick-fact" class="position-relative">
-        <!-- <img :src="store.getImagePath('globe1')" alt="Globe 1 img"
-            class="globe-bg-img position-absolute top-50 start-50"> -->
+        <img :src="store.getImagePath('globe1')" alt="Globe 1 img"
+            class="globe-bg-img position-absolute top-50 start-50">
         <div class="wrapped-container">
             <h2 class="text-center">Anidio Quick Facts</h2>
 
@@ -73,11 +73,13 @@ img.wave-bottom {
 }
 
 img.globe-bg-img {
-    width: 500px;
-    height: 500px;
+    width: 715px;
+    height: 715px;
     transform: translate(-50%, -50%);
     opacity: .3;
+    z-index: 1;
 }
+
 
 section#main-quick-fact {
     background-image: url(../../assets/preloader.png);
@@ -87,8 +89,12 @@ section#main-quick-fact {
     padding: 120px 0;
 }
 
+div.wrapped-container {
+    position: relative;
+    z-index: 2;
+}
+
 h2 {
-    z-index: 3;
     font-weight: bold;
     font-size: 4.5rem;
     margin-bottom: 5rem;

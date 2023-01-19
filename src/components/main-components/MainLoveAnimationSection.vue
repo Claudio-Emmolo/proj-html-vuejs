@@ -38,7 +38,7 @@ export default {
         <img :src="store.getImagePath('smart')" alt="Smart background image"
             class="smart-right-img position-absolute top-0 start-0">
         <div class="wrapped-container d-flex flex-column w-100">
-            <div class="love-info-txt m-auto text-center">
+            <div class="info-txt m-auto text-center">
 
                 <span>Our Love For Animation</span>
                 <h2>We're Storytelling <br> Exports With Creative <br> Smarts</h2>
@@ -73,30 +73,11 @@ img.smart-right-img {
 }
 
 
-div.love-info-txt {
+div.info-txt {
     width: 50%;
     position: relative;
     z-index: 2;
     padding-top: 150px;
-
-    span {
-        display: block;
-        color: $brand-blue;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    h2 {
-        font-weight: bold;
-        color: $brand-purple;
-        font-size: 4.5rem;
-    }
-
-    p {
-        color: $brand-purple;
-        font-size: 1.35rem;
-        margin: 1rem 0 2rem;
-    }
 }
 
 div.love-animation-cards {
