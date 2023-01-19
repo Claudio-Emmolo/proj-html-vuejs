@@ -43,7 +43,11 @@ export default {
 </script>
 
 <template>
-    <section id="team-member">
+    <section id="team-member" class="position-relative">
+        <img :src="store.getImagePath('shape')" alt="" class="shape position-absolute">
+        <img :src="store.getImagePath('shape2')" alt="" class="shape2  position-absolute">
+
+
         <div class="wrapped-container">
 
             <div class="info-txt">
@@ -59,8 +63,12 @@ export default {
                     <TeamMemberCard v-for="teamInfo in teamMemberInfoList" :teamInfo="teamInfo" />
                 </div>
                 <div class="row">
-                    <div class="team-slider">
+                    <div class="team-slider d-flex justify-content-center align-items-center">
                         <ArrowButtonLeft />
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle active"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
                         <ArrowButtonRight />
                     </div>
                 </div>
@@ -77,9 +85,35 @@ section#team-member {
     padding: 6rem 0;
 }
 
+img.shape {
+    top: 14%;
+    width: 45%;
+}
+
+
+img.shape2 {
+    top: 131px;
+    right: 0;
+    width: 54%;
+}
+
 div.info-txt {
     text-align: center;
     padding: 0 27rem;
     margin-bottom: 100px;
+}
+
+div.team-slider {
+    width: 100%;
+    margin: 2.5rem 0;
+
+    i {
+        color: $brand_dark-purple;
+        margin: 0 .5rem;
+    }
+
+    .active {
+        color: $brand-orange;
+    }
 }
 </style>
