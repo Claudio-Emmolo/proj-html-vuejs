@@ -10,7 +10,10 @@ export default {
     </button>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../../../styles/partials/variables' as *;
+
+
 button {
     width: max-content;
     border: 1px solid $brand-purple;
