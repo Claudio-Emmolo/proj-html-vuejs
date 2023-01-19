@@ -35,7 +35,8 @@ export default {
 
 <template>
     <section id="love-animation" class="position-relative">
-        <img :src="store.getImagePath('smart')" alt="Smart background image" class="position-absolute top-0 start-0">
+        <img :src="store.getImagePath('smart')" alt="Smart background image"
+            class="smart-right-img position-absolute top-0 start-0">
         <div class="wrapped-container d-flex flex-column w-100">
             <div class="love-info-txt m-auto text-center">
 
@@ -47,14 +48,15 @@ export default {
 
                 </p>
             </div>
-            <div class="container">
-                <div class="row justify-content-end">
+            <div class="container-fluid">
+                <div class="love-animation-cards row justify-content-end">
                     <!-- Import Card -->
                     <LoveAnimationCards v-for="cardProprety, index in loveAnimCardList" class="col-3 mx-3"
                         :cardProprety="cardProprety" />
                 </div>
             </div>
         </div>
+        <img :src="store.getImagePath('smart4')" alt="Rocket img" class="rocket position-absolute">
     </section>
 </template>
 
@@ -65,9 +67,9 @@ section#love-animation {
     margin-top: 300px;
 }
 
-img {
+img.smart-right-img {
     width: 700px;
-    height: 120%;
+    height: 1200px;
 }
 
 
@@ -95,5 +97,16 @@ div.love-info-txt {
         font-size: 1.35rem;
         margin: 1rem 0 2rem;
     }
+}
+
+div.love-animation-cards {
+    margin: 0 0 185px 100px;
+}
+
+img.rocket {
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    right: 10px
 }
 </style>

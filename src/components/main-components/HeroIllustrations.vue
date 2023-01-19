@@ -36,7 +36,7 @@ img.left-man {
 }
 
 img.right-man {
-    bottom: 37%;
+    bottom: 37.5%;
     right: 1%
 }
 

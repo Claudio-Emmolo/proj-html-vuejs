@@ -47,16 +47,16 @@ div.card {
     }
 
     p {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
 }
 
 div.card-bg-orange {
-    background: linear-gradient(0deg, $brand-light-gray 0%, $white 95%);
+    background: linear-gradient(0deg, $brand-light-orange 0%, $white 95%);
 }
 
 div.card-bg-blue {
-    background: linear-gradient(0deg, $brand-gray 0%, $white 95%);
+    background: linear-gradient(0deg, $brand_light-purple 0%, $white 95%);
 }
 
 div.card-bg-pink {
