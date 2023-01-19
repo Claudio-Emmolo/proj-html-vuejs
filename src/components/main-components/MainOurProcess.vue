@@ -1,10 +1,27 @@
 <script>
-import { store } from '../../store'
+import { store } from '../../store';
+import OutProcessCard from './sub-components/OurProcessCard.vue'
+
 export default {
     name: 'MainOurProcess',
+    components: { OutProcessCard },
     data() {
         return {
-            store
+            store,
+            ourProcessCardContentList: [
+                {
+                    imgPath: 'process2',
+                    title: 'Pre-Production',
+                    subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
+                    number: 4
+                },
+                {
+                    imgPath: 'process1',
+                    title: 'Scripting',
+                    subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
+                    number: 1
+                }
+            ]
         }
     },
 }
@@ -26,30 +43,9 @@ export default {
                     </div>
 
                     <div class="row">
-                        <div class="col-6 g-5">
-                            <div class="card-content">
-                                <div class="img-bg-rounded d-flex">
-                                    <img :src="store.getImagePath('process1')" alt="" class="m-auto">
-                                </div>
-                                <h3>Pre-Production</h3>
-                                <p>
-                                    We'll take your idea and create a technical script which consists of action notes
-                                    and animation descriptions
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-6 g-5">
-                            <div class="card-content">
-                                <div class="img-bg-rounded d-flex">
-                                    <img :src="store.getImagePath('process1')" alt="" class="m-auto">
-                                </div>
-                                <h3>Pre-Production</h3>
-                                <p>
-                                    We'll take your idea and create a technical script which consists of action notes
-                                    and animation descriptions
-                                </p>
-                            </div>
-                        </div>
+
+                        <OutProcessCard v-for="cardContent in ourProcessCardContentList" :cardContent="cardContent" />
+
                     </div>
 
                 </div>
@@ -58,7 +54,7 @@ export default {
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
 section#our-process {
@@ -91,32 +87,6 @@ div.info-txt {
         color: $brand-purple;
         font-size: 1.35rem;
         margin: 1rem 0 2rem;
-    }
-}
-
-div.card-content {
-    text-align: center;
-    border: 3px solid $brand_light-purple;
-    border-radius: 2rem;
-    padding: 2rem;
-
-    div.img-bg-rounded {
-        margin: auto;
-        width: 150px;
-        height: 150px;
-        background-color: $brand-light-orange;
-        border-radius: 50%;
-        margin-bottom: 1.5rem;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-        color: $brand-purple;
-        margin-bottom: 1.2rem;
-    }
-
-    p {
-        font-size: 1.5rem;
     }
 }
 </style>
