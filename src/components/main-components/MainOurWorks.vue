@@ -87,5 +87,11 @@ a.see-works-btn {
     border: 2px solid $brand-pink;
     padding: .8rem 2rem;
     border-radius: 2rem;
+
+    &:hover {
+        background-color: $brand-purple;
+        color: $white;
+        border: 1px solid transparent;
+    }
 }
 </style>

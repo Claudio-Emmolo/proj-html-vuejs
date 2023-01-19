@@ -95,6 +95,7 @@ img.shape2 {
     top: 131px;
     right: 0;
     width: 54%;
+    height: 74%;
 }
 
 div.info-txt {

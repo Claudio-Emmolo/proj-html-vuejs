@@ -30,5 +30,9 @@ a {
     text-decoration: none;
     color: $brand-blue;
     font-weight: 700;
+
+    &:hover {
+        color: $brand-orange;
+    }
 }
 </style>

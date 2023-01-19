@@ -32,6 +32,7 @@ div.card {
     padding: 2.5rem 1rem;
     border: 2px solid $brand-gray;
     text-align: center;
+    cursor: pointer;
 
     img {
         margin: auto;
@@ -53,13 +54,27 @@ div.card {
 
 div.card-bg-orange {
     background: linear-gradient(0deg, $brand-light-orange 0%, $white 95%);
+
+    &:hover {
+        background: linear-gradient(180deg, $brand-light-orange 0%, $white 95%);
+    }
 }
 
 div.card-bg-blue {
     background: linear-gradient(0deg, $brand_light-purple 0%, $white 95%);
+
+    &:hover {
+        background: linear-gradient(180deg, $brand_light-purple 0%, $white 95%);
+
+    }
 }
 
 div.card-bg-pink {
     background: linear-gradient(0deg, $brand-pink 0%, $white 95%);
+
+    &:hover {
+        background: linear-gradient(180deg, $brand_light-purple 0%, $white 95%);
+    }
+
 }
 </style>

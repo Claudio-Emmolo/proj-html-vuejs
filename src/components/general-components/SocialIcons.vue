@@ -46,5 +46,15 @@ a.social {
         font-size: 1.3rem;
         color: $brand-blue;
     }
+
+    &:hover {
+        background-color: $brand-orange;
+        border: 1.5px solid transparent;
+
+        i {
+            color: $white;
+
+        }
+    }
 }
 </style>

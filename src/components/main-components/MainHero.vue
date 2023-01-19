@@ -100,14 +100,32 @@ div.hero-buttons {
         background-color: $brand-pink;
         padding: .8rem 2rem;
         border-radius: 2rem;
+        border: 1px solid transparent;
+
+
+        &:hover {
+            color: $white;
+            border: 1px solid $brand-pink;
+            background-color: transparent;
+            -webkit-box-shadow: 0px 5px 13px 1px rgba($brand-pink, 0.65);
+            box-shadow: 0px 3px 13px 1px rgba($brand-pink, 0.65);
+        }
     }
 
     a.blue-btn {
         color: $white;
-        background-color: $brand-purple;
         border: 1px solid $brand-pink;
         padding: .8rem 2rem;
         border-radius: 2rem;
+
+        -webkit-box-shadow: 0px 5px 13px 1px rgba($brand-pink, 0.65);
+        box-shadow: 0px 3px 13px 1px rgba($brand-pink, 0.65);
+
+        &:hover {
+            color: $brand-purple;
+            background-color: $brand-pink;
+            box-shadow: 0 0 0 0;
+        }
     }
 }
 

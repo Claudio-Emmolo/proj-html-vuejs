@@ -98,6 +98,12 @@ div.send-email {
         border-radius: 3rem;
         font-size: 1.5rem;
         font-weight: 600;
+
+        &:hover {
+            background-color: $brand-purple;
+            color: $white;
+            border: 1px solid transparent;
+        }
     }
 }
 </style>

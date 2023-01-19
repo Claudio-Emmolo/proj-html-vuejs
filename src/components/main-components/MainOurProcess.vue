@@ -70,7 +70,7 @@ section#our-process {
 
 img.process-thumb {
     top: 0;
-    left: -21%;
+    left: -19%;
 }
 
 
@@ -80,19 +80,7 @@ div.info-txt {
 
 div.arrow-btn {
     padding: 2rem 0;
-    margin-left: 1rem;
-
-    button {
-        width: max-content;
-        border: 1px solid $brand-purple;
-        background-color: transparent;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        margin: 0 .3rem;
-        opacity: .5;
-        font-size: 2rem;
-    }
+    margin-left: 1.3rem;
 }
 
 img.rocket {

@@ -68,6 +68,10 @@ nav ul {
         color: $black;
         font-size: 1.5rem;
         font-weight: 600;
+
+        &:hover {
+            color: $brand-orange;
+        }
     }
 }
 </style>

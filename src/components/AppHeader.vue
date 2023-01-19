@@ -88,6 +88,11 @@ nav ul {
             font-weight: 600;
             text-decoration: none;
             color: $white;
+
+
+            &:hover {
+                color: $brand-orange;
+            }
         }
 
         a.quote-btn {
@@ -95,7 +100,18 @@ nav ul {
             background-color: $brand-pink;
             padding: .8rem 2rem;
             border-radius: 2rem;
+            border: 2px solid transparent;
+
+
+            &:hover {
+                background-color: transparent;
+                color: $white;
+                border: 2px solid $brand-pink;
+                -webkit-box-shadow: 0px 5px 13px 1px rgba($brand-pink, 0.65);
+                box-shadow: 0px 3px 13px 1px rgba($brand-pink, 0.65);
+            }
         }
+
 
     }
 
