@@ -65,12 +65,12 @@ export default {
 @use '../../styles/partials/variables' as *;
 
 section#our-process {
-    padding: 5rem 0;
+    padding: 5rem 0 4rem;
 }
 
 img.process-thumb {
     top: 0;
-    left: -19%;
+    left: -21%;
 }
 
 

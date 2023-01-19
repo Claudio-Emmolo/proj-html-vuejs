@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <footer>
+    <footer class="position-relative">
         <div class="wrapped-container">
 
             <!-- Import Top Footer Section -->
@@ -21,6 +21,11 @@ export default {
             <!-- Import Bottom Footer Section -->
             <FooterBottom />
         </div>
+
+        <a href="#">
+            <i class="fa-solid fa-arrow-up position-absolute"></i>
+        </a>
+
     </footer>
 </template>
 
@@ -35,5 +40,13 @@ div.separator {
     height: 2px;
     background-color: $brand-gray;
     margin: 3rem 0;
+}
+
+i.fa-arrow-up {
+    bottom: 10%;
+    right: 2%;
+    padding: 1rem;
+    color: $white;
+    background-color: $brand-blue;
 }
 </style>
