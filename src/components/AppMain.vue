@@ -1,12 +1,14 @@
 <script>
 import MainHero from './main-components/MainHero.vue';
 import MainLoveAnimationSection from './main-components/MainLoveAnimationSection.vue';
-import MainQuickFact from './main-components/MainQuickFact.vue'
+import MainQuickFact from './main-components/MainQuickFact.vue';
+import MainOurWorks from './main-components/MainOurWorks.vue';
+
 
 
 export default {
     name: 'AppMain',
-    components: { MainHero, MainLoveAnimationSection, MainQuickFact }
+    components: { MainHero, MainLoveAnimationSection, MainQuickFact, MainOurWorks }
 }
 </script>
 
@@ -18,6 +20,8 @@ export default {
         <MainLoveAnimationSection />
         <!-- Import Main Quick Fact Section -->
         <MainQuickFact />
+        <!-- Import Main Our Works Section -->
+        <MainOurWorks />
     </main>
 </template>
 
