@@ -1,20 +1,20 @@
 <script>
 export default {
-    name: 'ArrowButton'
+    name: 'ArrowButtonRight'
 }
 </script>
 
 <template>
-    <button>
+    <button class="arrow-slider">
         <i class="fa-solid fa-arrow-right"></i>
     </button>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../../../styles/partials/variables' as *;
 
 
-button {
+button.arrow-slider {
     width: max-content;
     border: 1px solid $brand-purple;
     background-color: transparent;

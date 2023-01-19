@@ -1,11 +1,12 @@
 <script>
 import { store } from '../../store';
 import OutProcessCard from './sub-components/OurProcessCard.vue';
-import ArrowButton from './sub-components/ArrowButton.vue'
+import ArrowButtonLeft from './sub-components/ArrowButtonLeft.vue';
+import ArrowButtonRight from './sub-components/ArrowButtonRight.vue';
 
 export default {
     name: 'MainOurProcess',
-    components: { OutProcessCard, ArrowButton },
+    components: { OutProcessCard, ArrowButtonLeft, ArrowButtonRight },
     data() {
         return {
             store,
@@ -48,8 +49,8 @@ export default {
                     </div>
 
                     <div class="arrow-btn row">
-                        <ArrowButton />
-                        <ArrowButton />
+                        <ArrowButtonLeft />
+                        <ArrowButtonRight />
                     </div>
 
                 </div>

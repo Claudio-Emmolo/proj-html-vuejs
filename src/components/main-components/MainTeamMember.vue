@@ -1,10 +1,13 @@
 <script>
 import { store } from '../../store';
-import TeamMemberCard from './sub-components/TeamMemberCard.vue'
+import TeamMemberCard from './sub-components/TeamMemberCard.vue';
+import ArrowButtonLeft from './sub-components/ArrowButtonLeft.vue';
+import ArrowButtonRight from './sub-components/ArrowButtonRight.vue';
+
 
 export default {
     name: 'MainTeamMember',
-    components: { TeamMemberCard },
+    components: { TeamMemberCard, ArrowButtonLeft, ArrowButtonRight },
     data() {
         return {
             store,
@@ -53,9 +56,13 @@ export default {
 
             <div class="container-fluid">
                 <div class="row">
-
                     <TeamMemberCard v-for="teamInfo in teamMemberInfoList" :teamInfo="teamInfo" />
-
+                </div>
+                <div class="row">
+                    <div class="team-slider">
+                        <ArrowButtonLeft />
+                        <ArrowButtonRight />
+                    </div>
                 </div>
             </div>
         </div>
