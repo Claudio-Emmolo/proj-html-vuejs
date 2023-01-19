@@ -1,10 +1,11 @@
 <script>
 import { store } from '../../store';
-import OutProcessCard from './sub-components/OurProcessCard.vue'
+import OutProcessCard from './sub-components/OurProcessCard.vue';
+import ArrowButton from './sub-components/ArrowButton.vue'
 
 export default {
     name: 'MainOurProcess',
-    components: { OutProcessCard },
+    components: { OutProcessCard, ArrowButton },
     data() {
         return {
             store,
@@ -47,12 +48,8 @@ export default {
                     </div>
 
                     <div class="arrow-btn row">
-                        <button>
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                        <button>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+                        <ArrowButton />
+                        <ArrowButton />
                     </div>
 
                 </div>
@@ -78,25 +75,6 @@ img.process-thumb {
 
 div.info-txt {
     padding-right: 5rem;
-
-    span {
-        display: block;
-        color: $brand-blue;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    h2 {
-        font-weight: bold;
-        color: $brand-purple;
-        font-size: 4.5rem;
-    }
-
-    p {
-        color: $brand-purple;
-        font-size: 1.35rem;
-        margin: 1rem 0 2rem;
-    }
 }
 
 div.arrow-btn {
