@@ -72,8 +72,8 @@ img.wave-bottom {
 }
 
 img.globe-bg-img {
-    width: 715px;
-    height: 715px;
+    width: 694px;
+    height: 694px;
     transform: translate(-50%, -50%);
     opacity: .3;
     z-index: 1;

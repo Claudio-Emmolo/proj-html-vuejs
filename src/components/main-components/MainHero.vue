@@ -132,6 +132,7 @@ div.hero-buttons {
 div.middle-video {
     transform: scale(1.65);
     bottom: -80%;
+    z-index: 3;
 
 
     button.play {

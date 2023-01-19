@@ -24,7 +24,7 @@ div.inside-card {
     border-radius: 3rem;
 
     span {
-        font-size: 6.8rem;
+        font-size: 6rem;
         font-weight: 600;
     }
 

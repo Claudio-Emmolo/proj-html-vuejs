@@ -87,7 +87,8 @@ section#team-member {
 
 img.shape {
     top: 14%;
-    width: 45%;
+    width: 50%;
+    height: 81%;
 }
 
 

@@ -65,7 +65,7 @@ export default {
 @use '../../styles/partials/variables' as *;
 
 section#our-process {
-    padding: 5rem 0 4rem;
+    padding: 7rem 0 4rem;
 }
 
 img.process-thumb {
