@@ -108,7 +108,7 @@ div.team-slider {
     margin: 2.5rem 0;
 
     i {
-        color: $brand_dark-purple;
+        color: $brand-gray;
         margin: 0 .5rem;
     }
 

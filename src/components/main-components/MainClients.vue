@@ -5,7 +5,29 @@ export default {
     name: 'MainClients',
     data() {
         return {
-            store
+            store,
+            clientImgList: [
+                {
+                    imgPath: 'sponsor5',
+                    alt: 'Pillar Logo'
+                },
+                {
+                    imgPath: 'sponsor6',
+                    alt: 'Digital Eagle Logo'
+                },
+                {
+                    imgPath: 'sponsor1',
+                    alt: 'Supreme Logo'
+                },
+                {
+                    imgPath: 'sponsor2',
+                    alt: 'Phoenix Logo'
+                },
+                {
+                    imgPath: 'sponsor3',
+                    alt: 'Cooperation Logo'
+                },
+            ]
         }
     },
 }
@@ -24,20 +46,8 @@ export default {
             </div>
             <div class="container-fluid">
                 <div class="row justify-content-around">
-                    <div class="col-2">
-                        <img :src="store.getImagePath('sponsor5')" alt="Pillar Logo" class="w-100">
-                    </div>
-                    <div class="col-2">
-                        <img :src="store.getImagePath('sponsor6')" alt="Digital Eagle Logo" class="w-100">
-                    </div>
-                    <div class="col-2">
-                        <img :src="store.getImagePath('sponsor1')" alt="Supreme Logo" class="w-100">
-                    </div>
-                    <div class="col-2">
-                        <img :src="store.getImagePath('sponsor2')" alt="Phoenix Logo" class="w-100">
-                    </div>
-                    <div class="col-2">
-                        <img :src="store.getImagePath('sponsor3')" alt="Cooperation Logo" class="w-100">
+                    <div class="col-2" v-for="imgUrl in clientImgList">
+                        <img :src="store.getImagePath(imgUrl.imgPath)" :alt="imgUrl.alt" class="w-100">
                     </div>
                 </div>
             </div>

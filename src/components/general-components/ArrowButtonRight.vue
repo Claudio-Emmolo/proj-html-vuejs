@@ -16,7 +16,7 @@ export default {
 
 button.arrow-slider {
     width: max-content;
-    border: 1px solid $brand-purple;
+    border: 2px solid $brand-gray;
     background-color: transparent;
     width: 70px;
     height: 70px;

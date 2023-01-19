@@ -30,7 +30,7 @@ export default {
 div.card {
     border-radius: 2rem;
     padding: 2.5rem 1rem;
-    border: 2px solid #e3e3ed;
+    border: 2px solid $brand-gray;
     text-align: center;
 
     img {
