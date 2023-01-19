@@ -30,7 +30,7 @@ export default {
 div.card {
     border-radius: 2rem;
     padding: 2.5rem 1rem;
-    border: 2px solid $brand-gray;
+    border: 2px solid $border-cards;
     text-align: center;
     cursor: pointer;
 
@@ -53,27 +53,27 @@ div.card {
 }
 
 div.card-bg-orange {
-    background: linear-gradient(0deg, $brand-light-orange 0%, $white 95%);
+    background: linear-gradient(0deg, $shape-card-modelling 0%, $shape-white 95%);
 
     &:hover {
-        background: linear-gradient(180deg, $brand-light-orange 0%, $white 95%);
+        background: linear-gradient(180deg, $shape-card-modelling 0%, $shape-white 95%);
     }
 }
 
 div.card-bg-blue {
-    background: linear-gradient(0deg, $brand_light-purple 0%, $white 95%);
+    background: linear-gradient(0deg, $shape-card-collab 0%, $shape-white 95%);
 
     &:hover {
-        background: linear-gradient(180deg, $brand_light-purple 0%, $white 95%);
+        background: linear-gradient(180deg, $shape-card-collab 0%, $shape-white 95%);
 
     }
 }
 
 div.card-bg-pink {
-    background: linear-gradient(0deg, $brand-pink 0%, $white 95%);
+    background: linear-gradient(0deg, $shape-card-creativity 0%, $shape-white 95%);
 
     &:hover {
-        background: linear-gradient(180deg, $brand_light-purple 0%, $white 95%);
+        background: linear-gradient(180deg, $shape-card-creativity 0%, $shape-white 95%);
     }
 
 }

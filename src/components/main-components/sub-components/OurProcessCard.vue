@@ -35,7 +35,7 @@ export default {
 
 div.card-content {
     text-align: center;
-    border: 3px solid $brand_light-purple;
+    border: 2px solid $border-card-our-process;
     border-radius: 2rem;
     padding: 2rem;
 
@@ -43,14 +43,14 @@ div.card-content {
         margin: auto;
         width: 180px;
         height: 180px;
-        background-color: $brand-light-orange;
+        background-color: $bg-img-our-process;
         border-radius: 50%;
         margin-bottom: 1.5rem;
     }
 
     h3 {
         font-size: 2.5rem;
-        color: $brand-purple;
+        color: $text-our-process;
         margin-bottom: 1.2rem;
     }
 
@@ -64,12 +64,12 @@ div.card-content {
 
         width: 50px;
         height: 100px;
-        background-color: $brand-light-purple;
+        background-color: $border-card-our-process;
         border-radius: 0 0 1rem 1rem;
 
         span {
             font-size: 1.3rem;
-            color: $brand-purple;
+            color: $text-our-process;
             margin-bottom: .5rem;
             font-weight: 600;
         }

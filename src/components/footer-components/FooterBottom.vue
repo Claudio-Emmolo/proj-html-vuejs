@@ -28,11 +28,11 @@ p {
 
 a {
     text-decoration: none;
-    color: $brand-blue;
+    color: $href-link;
     font-weight: 700;
 
     &:hover {
-        color: $brand-orange;
+        color: $href-hover-link;
     }
 }
 </style>

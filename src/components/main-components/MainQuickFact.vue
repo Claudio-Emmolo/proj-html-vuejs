@@ -85,7 +85,7 @@ section#main-quick-fact {
     background-image: url(../../assets/preloader.png);
     background-size: cover;
     background-repeat: no-repeat;
-    color: $white;
+    color: $general-quick-fact;
     padding: 120px 0;
 }
 

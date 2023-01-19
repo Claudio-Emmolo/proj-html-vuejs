@@ -109,12 +109,12 @@ div.team-slider {
     margin: 2.5rem 0;
 
     i {
-        color: $brand-gray;
+        color: $slider-circle;
         margin: 0 .5rem;
     }
 
     .active {
-        color: $brand-orange;
+        color: $slider-circle-active;
     }
 }
 </style>

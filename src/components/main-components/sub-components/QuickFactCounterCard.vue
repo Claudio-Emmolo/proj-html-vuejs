@@ -20,7 +20,7 @@ export default {
 div.inside-card {
     padding: 2rem 3.8rem;
     text-align: center;
-    border: 1px solid $white;
+    border: 1px solid $border-card-quick-fact;
     border-radius: 3rem;
 
     span {
@@ -29,7 +29,7 @@ div.inside-card {
     }
 
     h3 {
-        color: $brand-orange;
+        color: $description;
         font-size: 1.7rem;
     }
 }

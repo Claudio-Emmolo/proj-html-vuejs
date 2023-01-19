@@ -28,7 +28,7 @@ div.info-txt {
 
     span {
         display: block;
-        color: $brand-blue;
+        color: $pre-text-bg-white;
         font-size: 2rem;
         margin-bottom: 1rem;
         font-weight: 600;
@@ -36,12 +36,12 @@ div.info-txt {
 
     h2 {
         font-weight: bold;
-        color: $brand-purple;
+        color: $text-bg-white;
         font-size: 4.5rem;
     }
 
     p {
-        color: $brand-purple;
+        color: $text-bg-white;
         font-size: 1.35rem;
         margin: 1rem 0 2rem;
     }

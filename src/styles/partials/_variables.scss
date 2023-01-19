@@ -9,8 +9,107 @@ $brand_orange: #FF7A1F;
 $brand_light-purple: #F7F0FF;
 $brand_dark-purple: #8D829C;
 $brand-light-orange: #FFF9F5;
+$brand-gray: #e3e3ed;
 
+// ------------------------------------------ //
+
+//text ON VIOLET BG
+$pre-text-bg-violet: $brand-orange;
+$text-bg-violet: $white;
+
+//text ON WHITE BG
+$pre-text-bg-white: $brand-blue;
+$text-bg-white: $brand-purple;
+
+// Video Play
 $play-button-video-inside: #a616ea;
 $play-button-video-outside: #a716eae5;
 
-$brand-gray: #e3e3ed
+// NAVBAR
+$menu-item: $white;
+$menu-hover-item: $brand_orange;
+
+//QUICK FACT
+$general-quick-fact: $white;
+$border-card-quick-fact: $white;
+$description: $brand-orange;
+
+//Team Member Section
+$slider-circle: $brand-gray;
+$slider-circle-active: $brand_orange;
+$team-bg-card: $brand-light-orange;
+$team-txt-card: $brand-purple;
+
+//Send E-Mail
+$send-email-btn_bg: $brand-pink ;
+$send-email-btn_txt: $brand-purple;
+$send-email-btn-hover_bg: $brand-purple;
+$send-email-btn-hover-txt: $white;
+$send-email-box: $white;
+
+//Footer
+$href-link: $brand-blue ;
+$href-hover-link: $brand-orange;
+
+$footer-nav-txt: $black;
+$footer-nav-txt-hover: $brand_orange;
+
+$separator: $brand-gray ;
+
+$arrow-up-bg: $brand-blue;
+$arrow-up-txt: $white;
+$arrow-up-hover: $brand_orange;
+
+
+// ------------------------------------------ //
+
+
+
+// ---BUTTON--- //
+
+// Pink
+$btn-bg-pink_txt: $brand-purple;
+$btn-bg-pink_bg: $brand-pink;
+$btn-bg-pink-hover_txt: $white;
+//Border Pink
+$btn-border-pink_txt: $white;
+$btn-border-pink-border-bg: $brand-pink;
+$btn-border-pink-hover_txt: $brand-purple;
+//White
+$btn-white-border: $brand-pink;
+$btn-white-txt: $brand-purple;
+$btn-white-hover-bg: $brand-purple;
+$btn-white-hover-txt: $white;
+
+
+
+// ---CARDS--- //
+
+$text-cards: $black;
+//Love animation
+$border-cards: $brand-gray;
+$shape-card-modelling: $brand-light-orange;
+$shape-card-collab: $brand-light-purple;
+$shape-card-creativity: $brand-pink;
+$shape-white: $white;
+//Our Process
+$border-card-our-process: $brand-light-purple;
+$text-our-process: $brand-purple;
+$bg-img-our-process: $brand-light-orange;
+
+
+
+// ---OTHER--- //
+
+//Social Icons
+$social-bg: $white;
+$social-icon: $brand-blue;
+$social-border: $brand-gray;
+
+$social-bg-hover: $brand_orange;
+$social-icon-hover: $white;
+
+//Arrow Buttons
+$arrow-border: $brand-gray;
+$arrow-hover-bg: $brand_orange;
+$arrow-hover-icon: $white;

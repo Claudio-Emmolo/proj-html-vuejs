@@ -34,7 +34,7 @@ export default {
 
 
 div.inside-profile-card {
-    background-color: $brand-light-orange;
+    background-color: $team-bg-card;
     border-radius: 2rem;
 
     img {
@@ -48,7 +48,7 @@ div.inside-profile-card {
 
         h4 {
             font-size: 1.8rem;
-            color: $brand-purple;
+            color: $team-txt-card;
         }
 
         span {

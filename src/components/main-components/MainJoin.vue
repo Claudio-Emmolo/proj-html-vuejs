@@ -60,11 +60,11 @@ div.info-txt {
 
     h2,
     p {
-        color: $white;
+        color: $text-bg-violet;
     }
 
     span {
-        color: $brand-orange;
+        color: $pre-text-bg-violet;
     }
 
     p {
@@ -77,7 +77,7 @@ div.send-email {
     margin: 6rem auto 3rem;
     width: 65%;
     height: 80px;
-    background-color: $white;
+    background-color: $send-email-box;
     border-radius: 3rem;
 
     input {
@@ -93,15 +93,16 @@ div.send-email {
     button {
         width: 18%;
         height: 80%;
-        background-color: $brand-pink;
+        background-color: $send-email-btn_bg;
+        color: $send-email-btn_txt;
         border: 0;
         border-radius: 3rem;
         font-size: 1.5rem;
         font-weight: 600;
 
         &:hover {
-            background-color: $brand-purple;
-            color: $white;
+            background-color: $send-email-btn-hover_bg;
+            color: $send-email-btn-hover-txt;
             border: 1px solid transparent;
         }
     }

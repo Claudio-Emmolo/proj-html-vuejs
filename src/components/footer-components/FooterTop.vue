@@ -65,12 +65,12 @@ nav ul {
         margin: 0;
         margin: 0 1rem;
         text-decoration: none;
-        color: $black;
+        color: $footer-nav-txt;
         font-size: 1.5rem;
         font-weight: 600;
 
         &:hover {
-            color: $brand-orange;
+            color: $footer-nav-txt-hover;
         }
     }
 }

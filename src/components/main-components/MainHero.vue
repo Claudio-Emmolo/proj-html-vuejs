@@ -67,7 +67,7 @@ div.hero-inside-info {
     padding-bottom: 240px;
 
     span {
-        color: $brand-orange;
+        color: $pre-text-bg-violet;
         font-size: 1.85rem;
         font-weight: 600;
         margin-bottom: .5rem;
@@ -76,12 +76,12 @@ div.hero-inside-info {
     h1 {
         font-size: 6rem;
         font-weight: 700;
-        color: $white;
+        color: $text-bg-violet;
         margin-bottom: 1rem;
     }
 
     p {
-        color: $white;
+        color: $text-bg-violet;
         font-size: 1.8rem;
         margin-bottom: 5rem;
     }
@@ -96,34 +96,34 @@ div.hero-buttons {
     }
 
     a.pink-btn {
-        color: $brand-purple;
-        background-color: $brand-pink;
+        color: $btn-bg-pink_txt;
+        background-color: $btn-bg-pink_bg;
         padding: .8rem 2rem;
         border-radius: 2rem;
         border: 1px solid transparent;
 
 
         &:hover {
-            color: $white;
-            border: 1px solid $brand-pink;
+            color: $btn-bg-pink-hover_txt;
+            border: 1px solid $btn-bg-pink_bg;
             background-color: transparent;
-            -webkit-box-shadow: 0px 5px 13px 1px rgba($brand-pink, 0.65);
-            box-shadow: 0px 3px 13px 1px rgba($brand-pink, 0.65);
+            -webkit-box-shadow: 0px 5px 13px 1px rgba($btn-bg-pink_bg, 0.65);
+            box-shadow: 0px 3px 13px 1px rgba($btn-bg-pink_bg, 0.65);
         }
     }
 
     a.blue-btn {
-        color: $white;
-        border: 1px solid $brand-pink;
+        color: $btn-border-pink_txt;
+        border: 1px solid $btn-border-pink-border-bg;
         padding: .8rem 2rem;
         border-radius: 2rem;
 
-        -webkit-box-shadow: 0px 5px 13px 1px rgba($brand-pink, 0.65);
-        box-shadow: 0px 3px 13px 1px rgba($brand-pink, 0.65);
+        -webkit-box-shadow: 0px 5px 13px 1px rgba($btn-border-pink-border-bg, 0.65);
+        box-shadow: 0px 3px 13px 1px rgba($btn-border-pink-border-bg, 0.65);
 
         &:hover {
-            color: $brand-purple;
-            background-color: $brand-pink;
+            color: $btn-border-pink-hover_txt;
+            background-color: $btn-border-pink-border-bg;
             box-shadow: 0 0 0 0;
         }
     }

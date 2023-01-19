@@ -87,17 +87,17 @@ nav ul {
             font-size: 1.5rem;
             font-weight: 600;
             text-decoration: none;
-            color: $white;
+            color: $menu-item;
 
 
             &:hover {
-                color: $brand-orange;
+                color: $menu-hover-item;
             }
         }
 
         a.quote-btn {
-            color: $brand-purple;
-            background-color: $brand-pink;
+            color: $btn-bg-pink_txt;
+            background-color: $btn-bg-pink_bg;
             padding: .8rem 2rem;
             border-radius: 2rem;
             border: 2px solid transparent;
@@ -105,10 +105,10 @@ nav ul {
 
             &:hover {
                 background-color: transparent;
-                color: $white;
-                border: 2px solid $brand-pink;
-                -webkit-box-shadow: 0px 5px 13px 1px rgba($brand-pink, 0.65);
-                box-shadow: 0px 3px 13px 1px rgba($brand-pink, 0.65);
+                color: $btn-bg-pink-hover_txt;
+                border: 2px solid $btn-bg-pink_bg;
+                -webkit-box-shadow: 0px 5px 13px 1px rgba($btn-bg-pink_bg, 0.65);
+                box-shadow: 0px 3px 13px 1px rgba($btn-bg-pink_bg, 0.65);
             }
         }
 

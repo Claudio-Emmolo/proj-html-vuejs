@@ -70,7 +70,7 @@ section#our-process {
 
 img.process-thumb {
     top: 0;
-    left: -19%;
+    left: -21%;
 }
 
 

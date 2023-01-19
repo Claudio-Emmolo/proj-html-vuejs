@@ -32,9 +32,9 @@ export default {
 a.social {
     width: 50px;
     height: 50px;
-    background-color: $white;
+    background-color: $social-bg;
     border-radius: 50%;
-    border: 1.5px solid $brand_dark-purple;
+    border: 1.5px solid $social-border;
 
     margin: 0 .5rem;
 
@@ -44,16 +44,15 @@ a.social {
 
     i {
         font-size: 1.3rem;
-        color: $brand-blue;
+        color: $social-icon;
     }
 
     &:hover {
-        background-color: $brand-orange;
+        background-color: $social-bg-hover;
         border: 1.5px solid transparent;
 
         i {
-            color: $white;
-
+            color: $social-icon-hover;
         }
     }
 }

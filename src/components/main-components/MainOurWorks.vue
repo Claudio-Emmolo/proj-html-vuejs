@@ -57,24 +57,6 @@ section#our-works {
 div.info-txt {
     text-align: center;
 
-    span {
-        display: block;
-        color: $brand-blue;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    h2 {
-        font-weight: bold;
-        color: $brand-purple;
-        font-size: 4.5rem;
-    }
-
-    p {
-        color: $brand-purple;
-        font-size: 1.35rem;
-        margin: 1rem 0 2rem;
-    }
 }
 
 a.see-works-btn {
@@ -83,15 +65,15 @@ a.see-works-btn {
     font-size: 1.6rem;
     text-decoration: none;
     font-size: 1.8rem;
-    color: $brand-purple;
-    border: 2px solid $brand-pink;
+    color: $btn-white-txt;
+    border: 2px solid $btn-white-border;
     padding: .8rem 2rem;
     border-radius: 2rem;
 
     &:hover {
-        background-color: $brand-purple;
-        color: $white;
-        border: 1px solid transparent;
+        background-color: $btn-white-hover-bg;
+        color: $btn-white-hover-txt;
+        border: 2px solid transparent;
     }
 }
 </style>

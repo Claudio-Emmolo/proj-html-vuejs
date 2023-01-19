@@ -16,7 +16,7 @@ export default {
 
 button.arrow-slider {
     width: max-content;
-    border: 2px solid $brand-gray;
+    border: 2px solid $arrow-border;
     background-color: transparent;
     width: 70px;
     height: 70px;
@@ -28,8 +28,8 @@ button.arrow-slider {
 
     &:hover {
         opacity: 1;
-        background-color: $brand-orange;
-        color: $white;
+        background-color: $arrow-hover-bg;
+        color: $arrow-hover-icon;
     }
 }
 </style>

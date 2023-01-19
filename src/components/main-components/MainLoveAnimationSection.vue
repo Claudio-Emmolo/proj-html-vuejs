@@ -78,6 +78,10 @@ div.info-txt {
     position: relative;
     z-index: 2;
     padding-top: 150px;
+
+    p {
+        margin: 1rem 0 4rem;
+    }
 }
 
 div.love-animation-cards {

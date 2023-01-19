@@ -38,7 +38,7 @@ footer {
 
 div.separator {
     height: 2px;
-    background-color: $brand-gray;
+    background-color: $separator;
     margin: 3rem 0;
 }
 
@@ -46,7 +46,11 @@ i.fa-arrow-up {
     bottom: 10%;
     right: 2%;
     padding: 1rem;
-    color: $white;
-    background-color: $brand-blue;
+    color: $arrow-up-txt;
+    background-color: $arrow-up-bg;
+
+    &:hover {
+        background-color: $arrow-up-hover;
+    }
 }
 </style>
