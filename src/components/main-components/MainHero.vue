@@ -18,7 +18,7 @@ export default {
         <HeroIllustrations />
         <div class="wrapped-container hero-content h-100 d-flex">
             <div class="hero-inside-info m-auto text-center position-relative">
-                <div class="hero-txt mb-4">
+                <div class="hero-txt">
                     <span id="pre-title" class="d-block">Image, Create, Experience</span>
                     <h1>We Animate <br> With Ninja-Like Precision</h1>
                     <p>
@@ -26,13 +26,18 @@ export default {
                     </p>
                 </div>
 
-                <div class="hero-buttons mb-5">
-                    <button class="me-5">ITEM</button>
-                    <button>ITEM</button>
+                <div class="hero-buttons">
+                    <a href="#" class="pink-btn">Start Project</a>
+                    <a href="#" class="blue-btn">Portfolio</a>
                 </div>
 
                 <div class="middle-video position-absolute w-100">
-                    <img :src="store.getImagePath('middle')" alt="Midle Video thumb">
+                    <div class="play-button position-relative">
+                        <button class="play position-absolute d-flex">
+                            <i class="fa-solid fa-play m-auto"></i>
+                        </button>
+                        <img :src="store.getImagePath('middle')" alt="Midle Video thumb">
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,7 +61,7 @@ div.hero-content {
 }
 
 div.hero-inside-info {
-    padding-bottom: 255px;
+    padding-bottom: 240px;
 
     span {
         color: $brand-orange;
@@ -75,13 +80,59 @@ div.hero-inside-info {
     p {
         color: $white;
         font-size: 1.8rem;
+        margin-bottom: 5rem;
+    }
+}
+
+div.hero-buttons {
+    a {
+        text-decoration: none;
+        margin: 0 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    a.pink-btn {
+        color: $brand-purple;
+        background-color: $brand-pink;
+        padding: .8rem 2rem;
+        border-radius: 2rem;
+    }
+
+    a.blue-btn {
+        color: $white;
+        background-color: $brand-purple;
+        border: 1px solid $brand-pink;
+        padding: .8rem 2rem;
+        border-radius: 2rem;
     }
 }
 
 div.middle-video {
     transform: scale(1.65);
     bottom: -80%;
+
+    button.play {
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        background-color: $play-button-video;
+        border: 0;
+
+        border-radius: 50%;
+
+        i {
+            font-size: 3rem;
+            padding-left: 5px;
+        }
+
+    }
+
 }
+
 
 img.bottom-shape {
     background-image: url(../../assets/banner-bg.png);

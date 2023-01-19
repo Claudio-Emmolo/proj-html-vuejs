@@ -40,7 +40,7 @@ export default {
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <button>See More</button>
+                    <a href="#" class="see-works-btn">See Our Works</a>
                 </div>
             </div>
         </div>
@@ -77,7 +77,15 @@ div.info-txt {
     }
 }
 
-button {
+a.see-works-btn {
     width: max-content;
+    margin: 1.5rem 0 4rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $brand-purple;
+    border: 2px solid $brand-pink;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
 }
 </style>
