@@ -17,13 +17,13 @@ export default {
         <div class="wrapped-container">
 
             <div class="info-txt text-center">
-                <span>We Create New Worlds!</span>
-                <h2>Want Tips On Your Storytelling?</h2>
-                <p>
+                <span v-motion-slide-visible-once-bottom>We Create New Worlds!</span>
+                <h2 v-motion-slide-visible-once-bottom>Want Tips On Your Storytelling?</h2>
+                <p v-motion-slide-visible-once-bottom>
                     Join our newsletter for tips on how to elevate brand through storytelling
                 </p>
             </div>
-            <div class="send-email d-flex justify-content-center align-items-center">
+            <div v-motion-pop-visible-once class="send-email d-flex justify-content-center align-items-center">
                 <input type="email" placeholder="Enter you email">
                 <button>Submit</button>
             </div>

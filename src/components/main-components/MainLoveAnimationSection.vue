@@ -40,9 +40,9 @@ export default {
         <div class="wrapped-container d-flex flex-column w-100">
             <div class="info-txt m-auto text-center">
 
-                <span>Our Love For Animation</span>
-                <h2>We're Storytelling <br> Exports With Creative <br> Smarts</h2>
-                <p>
+                <span v-motion-slide-visible-once-bottom>Our Love For Animation</span>
+                <h2 v-motion-slide-visible-once-bottom>We're Storytelling <br> Exports With Creative <br> Smarts</h2>
+                <p v-motion-slide-visible-once-bottom>
                     Our culture inspires the creative and innovative spirit found throughout our Studio. We breathe life
                     into new ideas!
 
@@ -51,7 +51,8 @@ export default {
             <div class="container-fluid">
                 <div class="love-animation-cards row justify-content-end">
                     <!-- Import Card -->
-                    <LoveAnimationCards v-for="cardProprety, index in loveAnimCardList" class="col-3 mx-3"
+                    <LoveAnimationCards v-motion-slide-visible-once-right
+                        v-for="cardProprety, index in loveAnimCardList" class="col-3 mx-3"
                         :cardProprety="cardProprety" />
                 </div>
             </div>

@@ -37,14 +37,14 @@ export default {
     <section id="our-clients">
         <div class="wrapped-container">
             <div class="info-txt text-center">
-                <span>Why Anidio studio?</span>
-                <h2>We Love Our Clients</h2>
-                <p>
+                <span v-motion-slide-visible-once-bottom>Why Anidio studio?</span>
+                <h2 v-motion-slide-visible-once-bottom>We Love Our Clients</h2>
+                <p v-motion-slide-visible-once-bottom>
                     We are trusted throughout adland and have a wealth of recommendations from start-ups to renowned
                     global brands
                 </p>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid " v-motion-slide-visible-once-left>
                 <div class="row justify-content-around">
                     <div class="col-2" v-for="imgUrl in clientImgList">
                         <img :src="store.getImagePath(imgUrl.imgPath)" :alt="imgUrl.alt" class="w-100">

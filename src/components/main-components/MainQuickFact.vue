@@ -38,7 +38,7 @@ export default {
         <img :src="store.getImagePath('globe1')" alt="Globe 1 img"
             class="globe-bg-img position-absolute top-50 start-50">
         <div class="wrapped-container">
-            <h2 class="text-center">Anidio Quick Facts</h2>
+            <h2 v-motion-slide-visible-once-bottom class="text-center">Anidio Quick Facts</h2>
 
             <!-- Import and Generate Counter Cards -->
             <div class="container-fluid">

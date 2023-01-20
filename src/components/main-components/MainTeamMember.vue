@@ -161,9 +161,9 @@ export default {
         <div class="wrapped-container">
 
             <div class="info-txt">
-                <span>Anidio Magic Team Member</span>
-                <h2>Let Us Animate Your Project</h2>
-                <p>
+                <span v-motion-slide-visible-once-bottom>Anidio Magic Team Member</span>
+                <h2 v-motion-slide-visible-once-bottom>Let Us Animate Your Project</h2>
+                <p v-motion-slide-visible-once-bottom>
                     We create new worlds!Let's collaborate and create engaging, effective, award-winning animations
                 </p>
             </div>

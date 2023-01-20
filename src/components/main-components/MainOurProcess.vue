@@ -80,24 +80,24 @@ export default {
             <div class="row">
                 <div class="col-6 offset-6">
                     <div class="info-txt">
-                        <span>Our Process</span>
-                        <h2>Our Process for Your Animation Production</h2>
-                        <p>
+                        <span v-motion-slide-visible-once-bottom>Our Process</span>
+                        <h2 v-motion-slide-visible-once-bottom>Our Process for Your Animation Production</h2>
+                        <p v-motion-slide-visible-once-bottom>
                             We have an effective process for working on animation
                         </p>
                     </div>
                     <div class="overflow-hidden">
                         <div class="slider">
                             <div class="row flex-nowrap">
-                                <OutProcessCard v-for="cardContent in ourProcessCardContentList"
-                                    :cardContent="cardContent" />
+                                <OutProcessCard v-motion-slide-visible-once-right
+                                    v-for="cardContent in ourProcessCardContentList" :cardContent="cardContent" />
                             </div>
                         </div>
                     </div>
 
                     <div class="arrow-btn row">
-                        <ArrowButtonLeft @click="prevSlider()" />
-                        <ArrowButtonRight @click="nextSlider()" />
+                        <ArrowButtonLeft v-motion-slide-visible-once-left @click="prevSlider()" />
+                        <ArrowButtonRight v-motion-slide-visible-once-right @click="nextSlider()" />
                     </div>
 
                 </div>

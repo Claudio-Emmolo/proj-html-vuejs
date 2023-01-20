@@ -8,7 +8,7 @@ export default {
 <template>
     <div class="counter-card col-3 gx43">
         <div class="inside-card">
-            <span>{{ counterInfo.number }}</span>
+            <span v-motion-slide-visible-top>{{ counterInfo.number }}</span>
             <h3>{{ counterInfo.description }}</h3>
         </div>
     </div>

@@ -14,12 +14,12 @@ export default {
         <div class="wrapped-container">
 
             <!-- Import Top Footer Section -->
-            <FooterTop />
+            <FooterTop v-motion-pop-visible />
 
-            <div class="separator"></div>
+            <div v-motion-pop-visible class="separator"></div>
 
             <!-- Import Bottom Footer Section -->
-            <FooterBottom />
+            <FooterBottom v-motion-pop-visible />
         </div>
 
         <a href="#">

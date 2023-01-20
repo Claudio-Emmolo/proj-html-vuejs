@@ -17,9 +17,9 @@ export default {
     <section id="our-works">
         <div class="wrapped-container">
             <div class="info-txt">
-                <span>Our Works</span>
-                <h2>Featured Produtions</h2>
-                <p>
+                <span v-motion-slide-visible-once-bottom>Our Works</span>
+                <h2 v-motion-slide-visible-once-bottom>Featured Produtions</h2>
+                <p v-motion-slide-visible-once-bottom>
                     Here's just a small sample of some of those project that we're quite proud of. <br>
                     If you're looking for something specific feel free to get in contact with us
 
