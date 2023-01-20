@@ -45,7 +45,7 @@ export default {
         //Slider Scroll PREVIUS
         prevSlider() {
             if (this.breakpointSlider == 0) {
-                this.breakpointSlider = 1620;
+                this.breakpointSlider = 1215;
             }
             this.breakpointSlider = this.breakpointSlider - 405;
             this.slider = `-${this.breakpointSlider}px`;
