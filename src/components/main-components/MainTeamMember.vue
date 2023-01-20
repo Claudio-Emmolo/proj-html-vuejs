@@ -13,6 +13,7 @@ export default {
             store,
             slider: '0px',
             breakpointSlider: 0,
+            activePoint: 1,
             teamMemberInfoList: [
                 {
                     imgPath: 'team1',
@@ -39,7 +40,7 @@ export default {
                     InstagramUrl: '#',
                 },
                 {
-                    imgPath: 'team2',
+                    imgPath: 'team1',
                     name: 'Robert Coleman',
                     role: '2d animator & Compositor',
                     facebookUrl: '#',
@@ -63,7 +64,7 @@ export default {
                     InstagramUrl: '#',
                 },
                 {
-                    imgPath: 'team2',
+                    imgPath: 'team1',
                     name: 'Robert Coleman',
                     role: '2d animator & Compositor',
                     facebookUrl: '#',
@@ -87,7 +88,7 @@ export default {
                     InstagramUrl: '#',
                 },
                 {
-                    imgPath: 'team2',
+                    imgPath: 'team1',
                     name: 'Robert Coleman',
                     role: '2d animator & Compositor',
                     facebookUrl: '#',
@@ -118,7 +119,10 @@ export default {
         prevSlider() {
             if (this.breakpointSlider == 0) {
                 this.breakpointSlider = 6400;
+                this.activePoint = 5;
             }
+
+            this.activePoint = this.activePoint - 1;
             this.breakpointSlider = this.breakpointSlider - 1600;
             this.slider = `-${this.breakpointSlider}px`;
             console.log(this.breakpointSlider)
@@ -127,7 +131,9 @@ export default {
         nextSlider() {
             if (this.breakpointSlider == 4800) {
                 this.breakpointSlider = -1600;
+                this.activePoint = 0;
             }
+            this.activePoint += 1;
             this.breakpointSlider += 1600;
             this.slider = `-${this.breakpointSlider}px`;
             console.log(this.breakpointSlider)
@@ -161,10 +167,10 @@ export default {
                 <div class="row">
                     <div class="team-slider d-flex justify-content-center align-items-center">
                         <ArrowButtonLeft @click="prevSlider()" />
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle active"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle" :class="(activePoint == 1) ? 'active' : ''"></i>
+                        <i class="fa-solid fa-circle" :class="(activePoint == 2) ? 'active' : ''"></i>
+                        <i class="fa-solid fa-circle" :class="(activePoint == 3) ? 'active' : ''"></i>
+                        <i class="fa-solid fa-circle" :class="(activePoint == 4) ? 'active' : ''"></i>
                         <ArrowButtonRight @click="nextSlider()" />
                     </div>
                 </div>
@@ -214,6 +220,7 @@ div.team-slider {
         color: $slider-circle;
         margin: 0 .5rem;
     }
+
 
     .active {
         color: $slider-circle-active;

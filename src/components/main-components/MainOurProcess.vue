@@ -14,12 +14,6 @@ export default {
             breakpointSlider: 0,
             ourProcessCardContentList: [
                 {
-                    imgPath: 'process2',
-                    title: 'Pre-Production',
-                    subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
-                    number: 4
-                },
-                {
                     imgPath: 'process1',
                     title: 'Scripting',
                     subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
@@ -49,7 +43,7 @@ export default {
     methods: {
         prevSlider() {
             if (this.breakpointSlider == 0) {
-                this.breakpointSlider = 1215;
+                this.breakpointSlider = 1620;
             }
             this.breakpointSlider = this.breakpointSlider - 405;
             this.slider = `-${this.breakpointSlider}px`;
@@ -57,8 +51,8 @@ export default {
         },
 
         nextSlider() {
-            if (this.breakpointSlider == 1215) {
-                this.breakpointSlider = -0;
+            if (this.breakpointSlider == 810) {
+                this.breakpointSlider = -405;
             }
             this.breakpointSlider += 405;
             this.slider = `-${this.breakpointSlider}px`;
@@ -119,7 +113,6 @@ img.process-thumb {
 div.slider {
     transform: translate(v-bind(slider), 0);
     transition: all .5s;
-    // transform: translate(-405px, 0);
 }
 
 div.info-txt {
