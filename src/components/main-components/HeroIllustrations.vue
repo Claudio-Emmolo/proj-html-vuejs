@@ -46,11 +46,15 @@ img.right-man {
 img.globe1 {
     top: 10%;
     left: 10%;
+    animation: planets 5s linear 0s infinite normal none;
+
 }
 
 img.globe2 {
     top: 16%;
     left: 62%;
+    animation: planets 5s linear 0s infinite normal none;
+
 }
 
 img.globe3 {
@@ -63,7 +67,7 @@ img.light {
     right: 11%;
     transform: scale(1.3);
     z-index: 2;
-    animation: light 10s ease-in-out 0s infinite normal none;
+    animation: light 5s linear 0s infinite normal none;
 
 
 }
@@ -112,5 +116,11 @@ img.dots-right {
     }
 
     100% {}
+}
+
+@keyframes planets {
+    0% {
+        transform: rotate(360deg);
+    }
 }
 </style>

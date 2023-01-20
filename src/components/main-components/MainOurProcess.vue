@@ -10,6 +10,8 @@ export default {
     data() {
         return {
             store,
+            slider: '0px',
+            breakpointSlider: 0,
             ourProcessCardContentList: [
                 {
                     imgPath: 'process2',
@@ -22,10 +24,47 @@ export default {
                     title: 'Scripting',
                     subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
                     number: 1
-                }
+                },
+                {
+                    imgPath: 'process2',
+                    title: 'Pre-Production',
+                    subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
+                    number: 2
+                },
+                {
+                    imgPath: 'process1',
+                    title: 'Scripting',
+                    subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
+                    number: 3
+                },
+                {
+                    imgPath: 'process2',
+                    title: 'Pre-Production',
+                    subtitle: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
+                    number: 4
+                },
             ]
         }
     },
+    methods: {
+        prevSlider() {
+            if (this.breakpointSlider == 0) {
+                this.breakpointSlider = 1215;
+            }
+            this.breakpointSlider = this.breakpointSlider - 405;
+            this.slider = `-${this.breakpointSlider}px`;
+            console.log(this.breakpointSlider)
+        },
+
+        nextSlider() {
+            if (this.breakpointSlider == 1215) {
+                this.breakpointSlider = -0;
+            }
+            this.breakpointSlider += 405;
+            this.slider = `-${this.breakpointSlider}px`;
+            console.log(this.breakpointSlider)
+        }
+    }
 }
 </script>
 
@@ -43,14 +82,18 @@ export default {
                             We have an effective process for working on animation
                         </p>
                     </div>
-
-                    <div class="row">
-                        <OutProcessCard v-for="cardContent in ourProcessCardContentList" :cardContent="cardContent" />
+                    <div class="overflow-hidden">
+                        <div class="slider">
+                            <div class="row flex-nowrap">
+                                <OutProcessCard v-for="cardContent in ourProcessCardContentList"
+                                    :cardContent="cardContent" />
+                            </div>
+                        </div>
                     </div>
 
                     <div class="arrow-btn row">
-                        <ArrowButtonLeft />
-                        <ArrowButtonRight />
+                        <ArrowButtonLeft @click="prevSlider()" />
+                        <ArrowButtonRight @click="nextSlider()" />
                     </div>
 
                 </div>
@@ -73,6 +116,11 @@ img.process-thumb {
     left: -22%;
 }
 
+div.slider {
+    transform: translate(v-bind(slider), 0);
+    transition: all .5s;
+    // transform: translate(-405px, 0);
+}
 
 div.info-txt {
     padding-right: 5rem;

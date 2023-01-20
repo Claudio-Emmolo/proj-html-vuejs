@@ -11,6 +11,8 @@ export default {
     data() {
         return {
             store,
+            slider: '0px',
+            breakpointSlider: 0,
             teamMemberInfoList: [
                 {
                     imgPath: 'team1',
@@ -36,9 +38,101 @@ export default {
                     twitterUrl: '#',
                     InstagramUrl: '#',
                 },
+                {
+                    imgPath: 'team2',
+                    name: 'Robert Coleman',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Tomas Nash',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Tomas Nash',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Robert Coleman',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Tomas Nash',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Tomas Nash',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Robert Coleman',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Tomas Nash',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
+                {
+                    imgPath: 'team2',
+                    name: 'Tomas Nash',
+                    role: '2d animator & Compositor',
+                    facebookUrl: '#',
+                    twitterUrl: '#',
+                    InstagramUrl: '#',
+                },
             ]
         }
     },
+    methods: {
+
+        prevSlider() {
+            if (this.breakpointSlider == 0) {
+                this.breakpointSlider = 6400;
+            }
+            this.breakpointSlider = this.breakpointSlider - 1600;
+            this.slider = `-${this.breakpointSlider}px`;
+            console.log(this.breakpointSlider)
+        },
+
+        nextSlider() {
+            if (this.breakpointSlider == 4800) {
+                this.breakpointSlider = -1600;
+            }
+            this.breakpointSlider += 1600;
+            this.slider = `-${this.breakpointSlider}px`;
+            console.log(this.breakpointSlider)
+        }
+    }
 }
 </script>
 
@@ -58,18 +152,20 @@ export default {
                 </p>
             </div>
 
-            <div class="container-fluid">
-                <div class="row">
-                    <TeamMemberCard v-for="teamInfo in teamMemberInfoList" :teamInfo="teamInfo" />
+            <div class="container-fluid overflow-hidden">
+                <div class="slider">
+                    <div class="row flex-nowrap">
+                        <TeamMemberCard v-for="teamInfo in teamMemberInfoList" :teamInfo="teamInfo" />
+                    </div>
                 </div>
                 <div class="row">
                     <div class="team-slider d-flex justify-content-center align-items-center">
-                        <ArrowButtonLeft />
+                        <ArrowButtonLeft @click="prevSlider()" />
                         <i class="fa-solid fa-circle"></i>
                         <i class="fa-solid fa-circle active"></i>
                         <i class="fa-solid fa-circle"></i>
                         <i class="fa-solid fa-circle"></i>
-                        <ArrowButtonRight />
+                        <ArrowButtonRight @click="nextSlider()" />
                     </div>
                 </div>
             </div>
@@ -103,6 +199,11 @@ div.info-txt {
     text-align: center;
     padding: 0 27rem;
     margin-bottom: 100px;
+}
+
+div.slider {
+    transform: translate(v-bind(slider), 0);
+    transition: all .5s;
 }
 
 div.team-slider {
