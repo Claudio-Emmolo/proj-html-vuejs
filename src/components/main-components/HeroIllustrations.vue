@@ -33,12 +33,14 @@ img.bg-img {
 
 img.left-man {
     margin-top: 80px;
+    animation: floating-man-left 5s ease-in-out 0s infinite normal none;
 }
 
 img.right-man {
     bottom: 38.5%;
     right: 1%;
     z-index: 3;
+    animation: floating-man-right 5s ease-in-out 0s infinite normal none;
 }
 
 img.globe1 {
@@ -61,6 +63,9 @@ img.light {
     right: 11%;
     transform: scale(1.3);
     z-index: 2;
+    animation: light 10s ease-in-out 0s infinite normal none;
+
+
 }
 
 img.dots-left {
@@ -73,5 +78,39 @@ img.dots-right {
     top: 11%;
     right: 5%;
     transform: scale(1.1);
+}
+
+@keyframes floating-man-right {
+    0% {
+        transform: translate(0, 0%);
+    }
+
+    50% {
+        transform: translate(0, -8%);
+    }
+
+    100% {
+        transform: translate(0 0);
+    }
+}
+
+@keyframes floating-man-left {
+    0% {}
+
+    50% {
+        transform: translate(5%, -2%) rotate(10deg);
+    }
+
+    100% {}
+}
+
+@keyframes light {
+    0% {}
+
+    50% {
+        transform: scale(1.3) rotate(10deg);
+    }
+
+    100% {}
 }
 </style>

@@ -82,7 +82,7 @@ div.hero-inside-info {
 
     p {
         color: $text-bg-violet;
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         margin-bottom: 5rem;
         font-family: 'Barlow', sans-serif;
     }
@@ -94,13 +94,13 @@ div.hero-buttons {
         margin: 0 1.5rem;
         font-size: 1.8rem;
         font-weight: 600;
+        padding: .8rem 2.5rem;
+        border-radius: 2rem;
     }
 
     a.pink-btn {
         color: $btn-bg-pink_txt;
         background-color: $btn-bg-pink_bg;
-        padding: .8rem 2rem;
-        border-radius: 2rem;
         border: 1px solid transparent;
 
 
@@ -116,8 +116,6 @@ div.hero-buttons {
     a.blue-btn {
         color: $btn-border-pink_txt;
         border: 1px solid $btn-border-pink-border-bg;
-        padding: .8rem 2rem;
-        border-radius: 2rem;
 
         -webkit-box-shadow: 0px 5px 13px 1px rgba($btn-border-pink-border-bg, 0.65);
         box-shadow: 0px 3px 13px 1px rgba($btn-border-pink-border-bg, 0.65);
@@ -147,6 +145,18 @@ div.middle-video {
         border: 0;
 
         border-radius: 50%;
+
+        &:hover {
+            transition: all .2s ease-in-out;
+            width: 90px;
+            height: 90px;
+        }
+
+        &:hover i {
+            transition: all .2s ease-in-out;
+
+            font-size: 2rem;
+        }
 
         div.internal-bg {
             width: 60px;
