@@ -86,17 +86,17 @@ section#team-member {
 }
 
 img.shape {
-    top: 14%;
-    width: 50%;
+    top: 16%;
+    width: 55%;
     height: 81%;
 }
 
 
 img.shape2 {
-    top: 131px;
+    top: 110px;
     right: 0;
     width: 54%;
-    height: 74%;
+    height: 64%;
 }
 
 div.info-txt {

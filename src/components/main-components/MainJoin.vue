@@ -73,17 +73,22 @@ div.info-txt {
     }
 
     p {
-        margin: 0;
         padding: 0;
+        margin: .5rem 0 1rem;
     }
 }
 
 div.send-email {
-    margin: 6rem auto 3rem;
+    margin: 5rem auto 3rem;
     width: 65%;
     height: 80px;
     background-color: $send-email-box;
     border-radius: 3rem;
+
+    input,
+    button {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
     input {
         width: 80%;
@@ -92,7 +97,7 @@ div.send-email {
         border: 0;
         border-radius: 3rem;
         font-size: 1.2rem;
-        padding-right: 1rem;
+        padding: 0 1rem;
     }
 
     button {
@@ -103,7 +108,7 @@ div.send-email {
         border: 0;
         border-radius: 3rem;
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 300;
 
         &:hover {
             background-color: $send-email-btn-hover_bg;

@@ -77,6 +77,7 @@ div.info-txt {
     width: 50%;
     position: relative;
     z-index: 2;
+    padding-left: 30px;
     padding-top: 150px;
 
     p {

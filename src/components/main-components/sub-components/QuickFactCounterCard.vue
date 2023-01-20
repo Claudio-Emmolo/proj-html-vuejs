@@ -18,13 +18,13 @@ export default {
 @use '../../../styles/partials/variables' as *;
 
 div.inside-card {
-    padding: 2rem 3.8rem;
+    padding: 3rem 3.8rem;
     text-align: center;
     border: 1px solid $border-card-quick-fact;
     border-radius: 3rem;
 
     span {
-        font-size: 6rem;
+        font-size: 5.5rem;
         font-weight: 600;
     }
 

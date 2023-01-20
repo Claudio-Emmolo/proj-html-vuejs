@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 section#our-clients {
-    padding: 10rem 0;
+    padding: 8rem 0 10rem;
 }
 
 div.info-txt {

@@ -86,6 +86,7 @@ div.arrow-btn {
 img.rocket {
     width: 200px;
     height: 200px;
-    right: 10px
+    right: 15px;
+    bottom: -81px;
 }
 </style>
