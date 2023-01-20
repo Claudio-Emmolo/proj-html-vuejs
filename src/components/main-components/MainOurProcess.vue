@@ -49,7 +49,6 @@ export default {
             }
             this.breakpointSlider = this.breakpointSlider - 405;
             this.slider = `-${this.breakpointSlider}px`;
-            console.log(this.breakpointSlider)
         },
 
         //Slider Scroll NEXT
@@ -59,7 +58,6 @@ export default {
             }
             this.breakpointSlider += 405;
             this.slider = `-${this.breakpointSlider}px`;
-            console.log(this.breakpointSlider)
         },
 
         // Slider AutoPlay

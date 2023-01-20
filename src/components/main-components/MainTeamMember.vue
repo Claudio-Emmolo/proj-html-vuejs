@@ -126,7 +126,6 @@ export default {
             this.activePoint = this.activePoint - 1;
             this.breakpointSlider = this.breakpointSlider - 1600;
             this.slider = `-${this.breakpointSlider}px`;
-            console.log(this.breakpointSlider)
         },
 
         //Slider Scroll PREVIUS
@@ -138,7 +137,6 @@ export default {
             this.activePoint += 1;
             this.breakpointSlider += 1600;
             this.slider = `-${this.breakpointSlider}px`;
-            console.log(this.breakpointSlider)
         },
         // Slider AutoPlay
         autoplay() {
