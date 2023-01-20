@@ -41,6 +41,8 @@ export default {
         }
     },
     methods: {
+
+        //Slider Scroll PREVIUS
         prevSlider() {
             if (this.breakpointSlider == 0) {
                 this.breakpointSlider = 1620;
@@ -50,6 +52,7 @@ export default {
             console.log(this.breakpointSlider)
         },
 
+        //Slider Scroll NEXT
         nextSlider() {
             if (this.breakpointSlider == 810) {
                 this.breakpointSlider = -405;
@@ -59,6 +62,7 @@ export default {
             console.log(this.breakpointSlider)
         },
 
+        // Slider AutoPlay
         autoplay() {
             setInterval(() => {
                 this.nextSlider();

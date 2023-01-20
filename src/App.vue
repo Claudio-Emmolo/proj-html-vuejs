@@ -14,6 +14,7 @@ export default {
         }
     },
     methods: {
+        //Loading time
         entreInTheSite() {
             setTimeout(() => {
                 this.firstLoading = false
@@ -27,12 +28,12 @@ export default {
 </script>
 
 <template>
+    <!-- Import Loading -->
     <div v-if="firstLoading" class="loader">
         <SiteLoader />
     </div>
 
     <div v-else class="pages">
-
         <!-- Import Header -->
         <AppHeader />
         <!-- Import Main -->
@@ -47,6 +48,7 @@ export default {
 @use './styles/general.scss' as *;
 @use './styles/partials/variables' as *;
 
+// General info-txt style
 div.info-txt {
 
     span {

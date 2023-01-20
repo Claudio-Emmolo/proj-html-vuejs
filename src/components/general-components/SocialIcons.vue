@@ -7,17 +7,17 @@ export default {
 
 <template>
     <div class="social-icons d-flex justify-content-center">
-
+        <!-- Facebook -->
         <a :href="urlFacebook" class="social d-flex">
             <i class="fa-brands fa-facebook-f m-auto"></i>
         </a>
 
-
+        <!-- Twitter -->
         <a :href="urlTwitter" class="social d-flex">
             <i class="fa-brands fa-twitter m-auto"></i>
         </a>
 
-
+        <!-- Instagram -->
         <a :href="urlInstagram" class="social d-flex">
             <i class="fa-brands fa-instagram m-auto"></i>
         </a>

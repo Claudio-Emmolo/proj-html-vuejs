@@ -116,6 +116,7 @@ export default {
     },
     methods: {
 
+        //Slider Scroll PREVIUS
         prevSlider() {
             if (this.breakpointSlider == 0) {
                 this.breakpointSlider = 6400;
@@ -128,6 +129,7 @@ export default {
             console.log(this.breakpointSlider)
         },
 
+        //Slider Scroll PREVIUS
         nextSlider() {
             if (this.breakpointSlider == 4800) {
                 this.breakpointSlider = -1600;

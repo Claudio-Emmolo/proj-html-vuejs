@@ -49,6 +49,7 @@ export default {
             </a>
             <nav class="my-auto">
                 <ul class="m-0 d-flex align-item-center">
+                    <!-- Generate navbar items -->
                     <li v-for="item in navbarItems">
                         <a :href="item.url">
                             {{ item.title }}

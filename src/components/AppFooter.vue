@@ -23,6 +23,7 @@ export default {
             <FooterBottom v-motion-pop-visible />
         </div>
 
+        <!-- "Back on Top" button -->
         <a href="#">
             <i class="fa-solid fa-arrow-up position-absolute"></i>
         </a>

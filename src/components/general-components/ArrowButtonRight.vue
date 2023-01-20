@@ -13,7 +13,7 @@ export default {
 <style lang="scss">
 @use '../../styles/partials/variables' as *;
 
-
+// General Scroll Arrow button styles
 button.arrow-slider {
     width: max-content;
     border: 2px solid $arrow-border;

@@ -47,9 +47,10 @@ export default {
 
                 </p>
             </div>
+
+            <!-- Generate "Love Animations" Cards info -->
             <div class="container-fluid">
                 <div class="love-animation-cards row justify-content-end">
-                    <!-- Generate Cards -->
                     <LoveAnimationCards v-motion-slide-visible-once-right v-for="cardProprety in loveAnimCardList"
                         class="col-3 mx-3" :cardProprety="cardProprety" />
                 </div>
