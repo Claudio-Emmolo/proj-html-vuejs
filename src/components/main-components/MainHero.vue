@@ -8,12 +8,31 @@ export default {
     data() {
         return {
             store,
+            videoOpen: false
+        }
+    },
+    methods: {
+        openVideo() {
+            this.videoOpen = true
+        },
+
+        closeVideo() {
+            this.videoOpen = false
         }
     },
 }
 </script>
 
 <template>
+
+    <section v-if="(videoOpen)" id="video-player" class="position-fixed top-0 d-flex">
+        <div class="video-container position-relative m-auto">
+            <i @click="closeVideo()" class="fa-solid fa-x position-absolute"></i>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </div>
+    </section>
+
     <section id="hero" class="position-relative">
         <!-- Import all bg illustations -->
         <HeroIllustrations />
@@ -34,7 +53,7 @@ export default {
 
                 <div class="middle-video position-absolute w-100">
                     <div class="play-button position-relative">
-                        <button class="play position-absolute d-flex">
+                        <button @click="openVideo()" class="play position-absolute d-flex">
                             <div class="internal-bg m-auto d-flex">
 
                                 <i class="fa-solid fa-play m-auto"></i>
@@ -52,6 +71,24 @@ export default {
 <style lang="scss">
 @use '../../styles/partials/variables' as *;
 
+section#video-player {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.658);
+    z-index: 10;
+
+    i {
+        font-size: 4rem;
+        color: $white;
+        top: -10%;
+        right: -10%;
+        cursor: pointer;
+
+        &:hover {
+            color: $brand-orange;
+        }
+    }
+}
 
 section#hero {
     padding-top: 220px;
