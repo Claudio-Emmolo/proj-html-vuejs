@@ -137,7 +137,17 @@ export default {
             this.breakpointSlider += 1600;
             this.slider = `-${this.breakpointSlider}px`;
             console.log(this.breakpointSlider)
+        },
+
+        autoplay() {
+            setInterval(() => {
+                this.nextSlider();
+            }, 3000);
         }
+    },
+
+    created() {
+        this.autoplay()
     }
 }
 </script>

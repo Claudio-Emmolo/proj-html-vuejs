@@ -57,7 +57,17 @@ export default {
             this.breakpointSlider += 405;
             this.slider = `-${this.breakpointSlider}px`;
             console.log(this.breakpointSlider)
+        },
+
+        autoplay() {
+            setInterval(() => {
+                this.nextSlider();
+            }, 2000);
         }
+    },
+
+    created() {
+        this.autoplay()
     }
 }
 </script>
