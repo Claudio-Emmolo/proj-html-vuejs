@@ -28,8 +28,8 @@ export default {
 
 
 div.card {
-    border-radius: 2rem;
-    padding: 2.5rem 1rem;
+    border-radius: 3rem;
+    padding: 2.5rem 1.2rem;
     border: 2px solid $border-cards;
     text-align: center;
     cursor: pointer;
@@ -38,17 +38,18 @@ div.card {
         margin: auto;
         width: 100px;
         height: 100px;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.3rem;
     }
 
 
     h3 {
         font-size: 2.8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.3rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-family: 'Barlow', sans-serif;
     }
 }
 

@@ -13,19 +13,19 @@ export default {
                     tag: 1,
                     imgPath: 'smart1',
                     title: '3D modeling',
-                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave.Yep, we'll drill depp to deliver above and beyond your expectations."
+                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave. Yep, we'll drill depp to deliver above and beyond your expectations."
                 },
                 {
                     tag: 2,
                     imgPath: 'smart2',
                     title: 'Collaboration',
-                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave.Yep, we'll drill depp to deliver above and beyond your expectations."
+                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave. Yep, we'll drill depp to deliver above and beyond your expectations."
                 },
                 {
                     tag: 3,
                     imgPath: 'smart3',
                     title: 'Creativity',
-                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave.Yep, we'll drill depp to deliver above and beyond your expectations."
+                    subtitle: "We constantly ask questions. It help us shape your story and deliver the result you crave. Yep, we'll drill depp to deliver above and beyond your expectations."
                 },
             ]
         }

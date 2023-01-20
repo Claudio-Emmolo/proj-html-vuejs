@@ -65,6 +65,7 @@ a.see-works-btn {
     font-size: 1.6rem;
     text-decoration: none;
     font-size: 1.8rem;
+    font-weight: 500;
     color: $btn-white-txt;
     border: 2px solid $btn-white-border;
     padding: .8rem 2rem;

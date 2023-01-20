@@ -38,12 +38,14 @@ div.info-txt {
         font-weight: bold;
         color: $text-bg-white;
         font-size: 4.5rem;
+        margin-bottom: .3rem;
     }
 
     p {
         color: $text-bg-white;
-        font-size: 1.35rem;
+        font-size: 1.45rem;
         margin: 1rem 0 2rem;
+        font-family: 'Barlow', sans-serif;
     }
 }
 </style>

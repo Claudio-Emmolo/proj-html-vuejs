@@ -53,7 +53,8 @@ div.inside-profile-card {
 
         span {
             font-size: 1.5rem;
-            font-weight: 100;
+            font-family: 'Barlow', sans-serif;
+
         }
     }
 

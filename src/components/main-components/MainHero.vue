@@ -84,6 +84,7 @@ div.hero-inside-info {
         color: $text-bg-violet;
         font-size: 1.8rem;
         margin-bottom: 5rem;
+        font-family: 'Barlow', sans-serif;
     }
 }
 

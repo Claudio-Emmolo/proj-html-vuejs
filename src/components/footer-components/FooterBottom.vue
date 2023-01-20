@@ -13,7 +13,7 @@ export default {
         <p>
             Copyright &copy; 2002
             <a href="#">
-                Softvus.</a> All rights reserved.
+                Softivus.</a> All rights reserved.
         </p>
         <SocialIcons :urlFacebook="'#'" :urlTwitter="'#'" :urlInstagram="'#'" />
     </section>
@@ -23,7 +23,8 @@ export default {
 @use '../../styles/partials/variables' as *;
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
+    font-family: 'Barlow', sans-serif;
 }
 
 a {

@@ -74,7 +74,7 @@ div.info-txt {
 
     p {
         padding: 0;
-        margin: .5rem 0 1rem;
+        margin: 1.5rem 0;
     }
 }
 
@@ -87,7 +87,7 @@ div.send-email {
 
     input,
     button {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Barlow', sans-serif;
     }
 
     input {
@@ -108,7 +108,7 @@ div.send-email {
         border: 0;
         border-radius: 3rem;
         font-size: 1.5rem;
-        font-weight: 300;
+        font-weight: 500;
 
         &:hover {
             background-color: $send-email-btn-hover_bg;

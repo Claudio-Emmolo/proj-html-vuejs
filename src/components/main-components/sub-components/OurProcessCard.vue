@@ -55,7 +55,10 @@ div.card-content {
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-family: "Barlow", sans-serif;
+        padding: 0 .3rem;
+        line-height: 1.56;
     }
 
     div.number {

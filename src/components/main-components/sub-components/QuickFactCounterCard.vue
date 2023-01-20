@@ -26,11 +26,14 @@ div.inside-card {
     span {
         font-size: 5.5rem;
         font-weight: 600;
+
     }
 
     h3 {
         color: $description;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        font-family: 'Barlow', sans-serif;
+
     }
 }
 </style>
