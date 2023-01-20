@@ -1,22 +1,45 @@
 <script >
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue'
+import AppFooter from './components/AppFooter.vue';
+import SiteLoader from './components/SiteLoader.vue';
 
 
 export default {
     name: 'App',
-    components: { AppHeader, AppMain, AppFooter },
+    components: { AppHeader, AppMain, AppFooter, SiteLoader },
+    data() {
+        return {
+            firstLoading: true
+        }
+    },
+    methods: {
+        entreInTheSite() {
+            setTimeout(() => {
+                this.firstLoading = false
+            }, 1500);
+        }
+    },
+    created() {
+        this.entreInTheSite()
+    }
 }
 </script>
 
 <template>
-    <!-- Import Header -->
-    <AppHeader />
-    <!-- Import Main -->
-    <AppMain />
-    <!-- Import Footer -->
-    <AppFooter />
+    <div v-if="firstLoading" class="loader">
+        <SiteLoader />
+    </div>
+
+    <div v-else class="pages">
+
+        <!-- Import Header -->
+        <AppHeader />
+        <!-- Import Main -->
+        <AppMain />
+        <!-- Import Footer -->
+        <AppFooter />
+    </div>
 </template>
 
 <style lang="scss">
