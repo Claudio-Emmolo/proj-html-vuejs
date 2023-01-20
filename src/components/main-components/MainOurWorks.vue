@@ -19,7 +19,7 @@ export default {
                 <span>Our Works</span>
                 <h2>Featured Produtions</h2>
                 <p>
-                    Here's just a small sample of some of those project thath we're quite proud of. <br>
+                    Here's just a small sample of some of those project that we're quite proud of. <br>
                     If you're looking for something specific feel free to get in contact with us
 
                 </p>
@@ -40,7 +40,7 @@ export default {
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <a href="#" class="see-works-btn">See Our Works</a>
+                    <a href="#" class="see-works-btn">See Our Work</a>
                 </div>
             </div>
         </div>
