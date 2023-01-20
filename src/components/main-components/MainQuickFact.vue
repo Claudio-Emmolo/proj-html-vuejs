@@ -77,6 +77,8 @@ img.globe-bg-img {
     transform: translate(-50%, -50%);
     opacity: .3;
     z-index: 1;
+    animation: planet 20s linear 0s infinite normal none;
+
 }
 
 
@@ -98,5 +100,17 @@ h2 {
     font-weight: bold;
     font-size: 4.5rem;
     margin-bottom: 5rem;
+}
+
+@keyframes planet {
+    0% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
 }
 </style>
