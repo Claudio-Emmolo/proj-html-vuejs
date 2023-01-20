@@ -142,7 +142,7 @@ export default {
         autoplay() {
             setInterval(() => {
                 this.nextSlider();
-            }, 3000);
+            }, 5000);
         }
     },
 
