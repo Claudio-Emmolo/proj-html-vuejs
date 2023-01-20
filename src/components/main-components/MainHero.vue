@@ -15,6 +15,7 @@ export default {
 
 <template>
     <section id="hero" class="position-relative">
+        <!-- Import all bg illustations -->
         <HeroIllustrations />
         <div class="wrapped-container hero-content h-100 d-flex">
             <div class="hero-inside-info m-auto text-center position-relative">

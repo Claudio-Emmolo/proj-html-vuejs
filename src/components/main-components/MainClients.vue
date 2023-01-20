@@ -44,6 +44,7 @@ export default {
                     global brands
                 </p>
             </div>
+            <!-- Generate clients logo -->
             <div class="container-fluid " v-motion-slide-visible-once-left>
                 <div class="row justify-content-around">
                     <div class="col-2" v-for="imgUrl in clientImgList">

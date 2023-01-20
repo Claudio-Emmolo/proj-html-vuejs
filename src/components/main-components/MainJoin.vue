@@ -23,6 +23,8 @@ export default {
                     Join our newsletter for tips on how to elevate brand through storytelling
                 </p>
             </div>
+
+            <!-- Email Form -->
             <div v-motion-pop-visible-once class="send-email d-flex justify-content-center align-items-center">
                 <input type="email" placeholder="Enter you email">
                 <button>Submit</button>

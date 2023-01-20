@@ -15,6 +15,7 @@ export default {
             <a href="#">
                 Softivus.</a> All rights reserved.
         </p>
+        <!-- Import Social Icons -->
         <SocialIcons :urlFacebook="'#'" :urlTwitter="'#'" :urlInstagram="'#'" />
     </section>
 </template>

@@ -138,7 +138,7 @@ export default {
             this.slider = `-${this.breakpointSlider}px`;
             console.log(this.breakpointSlider)
         },
-
+        // Slider AutoPlay
         autoplay() {
             setInterval(() => {
                 this.nextSlider();

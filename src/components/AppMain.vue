@@ -8,12 +8,6 @@ import MainTeamMember from './main-components/MainTeamMember.vue';
 import MainClients from './main-components/MainClients.vue';
 import MainJoin from './main-components/MainJoin.vue';
 
-
-
-
-
-
-
 export default {
     name: 'AppMain',
     components: { MainHero, MainLoveAnimationSection, MainQuickFact, MainOurWorks, MainOurProcess, MainTeamMember, MainClients, MainJoin }
@@ -38,11 +32,5 @@ export default {
         <MainClients />
         <!-- Import Main Join Section -->
         <MainJoin />
-
-
     </main>
 </template>
-
-<style lang="scss" scoped>
-
-</style>

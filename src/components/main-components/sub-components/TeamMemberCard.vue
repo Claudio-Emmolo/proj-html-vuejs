@@ -21,7 +21,7 @@ export default {
             <div class="txt">
                 <h4>{{ teamInfo.name }}</h4>
                 <span class="d-block">{{ teamInfo.role }}</span>
-
+                <!-- Import Social Icons -->
                 <SocialIcons :urlFacebook="teamInfo.facebookUrl" :urlTwitter="teamInfo.twitterUrl"
                     :urlInstagram="teamInfo.InstagramUrl" class="social-icons" />
             </div>

@@ -38,6 +38,7 @@ export default {
         <a href="#">
             <img :src="store.getImagePath('footer-logo')" alt="Anido Logo">
         </a>
+        <!-- Generate footer menu -->
         <nav class="d-flex">
             <ul class="m-auto d-flex align-items-center p-0 ">
                 <li v-for="item in footerNavbarList">

@@ -39,7 +39,6 @@ export default {
             class="smart-right-img position-absolute top-0 start-0">
         <div class="wrapped-container d-flex flex-column w-100">
             <div class="info-txt m-auto text-center">
-
                 <span v-motion-slide-visible-once-bottom>Our Love For Animation</span>
                 <h2 v-motion-slide-visible-once-bottom>We're Storytelling <br> Exports With Creative <br> Smarts</h2>
                 <p v-motion-slide-visible-once-bottom>
@@ -50,10 +49,9 @@ export default {
             </div>
             <div class="container-fluid">
                 <div class="love-animation-cards row justify-content-end">
-                    <!-- Import Card -->
-                    <LoveAnimationCards v-motion-slide-visible-once-right
-                        v-for="cardProprety, index in loveAnimCardList" class="col-3 mx-3"
-                        :cardProprety="cardProprety" />
+                    <!-- Generate Cards -->
+                    <LoveAnimationCards v-motion-slide-visible-once-right v-for="cardProprety in loveAnimCardList"
+                        class="col-3 mx-3" :cardProprety="cardProprety" />
                 </div>
             </div>
         </div>

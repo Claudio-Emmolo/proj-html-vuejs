@@ -16,6 +16,7 @@ export default {
             <!-- Import Top Footer Section -->
             <FooterTop v-motion-pop-visible />
 
+            <!-- Separator Line -->
             <div v-motion-pop-visible class="separator"></div>
 
             <!-- Import Bottom Footer Section -->

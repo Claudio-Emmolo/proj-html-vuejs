@@ -86,6 +86,7 @@ export default {
                             We have an effective process for working on animation
                         </p>
                     </div>
+                    <!-- Card SLider -->
                     <div class="overflow-hidden">
                         <div class="slider">
                             <div class="row flex-nowrap">
@@ -95,6 +96,7 @@ export default {
                         </div>
                     </div>
 
+                    <!-- Scroll Arrow button -->
                     <div class="arrow-btn row">
                         <ArrowButtonLeft v-motion-slide-visible-once-left @click="prevSlider()" />
                         <ArrowButtonRight v-motion-slide-visible-once-right @click="nextSlider()" />

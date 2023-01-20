@@ -29,14 +29,15 @@ export default {
                 <div class="row mb-5">
                     <div class="col-6 g-5" v-for="item in workCardItems">
                         <div class="inside-card w-100 h-100 position-relative top-0 start-0">
+                            <!-- Card Hover -->
                             <div class="card-hover position-absolute">
                                 <button class="play position-absolute d-flex">
                                     <div class="internal-bg m-auto d-flex">
-
                                         <i class="fa-solid fa-play m-auto"></i>
                                     </div>
                                 </button>
                             </div>
+                            <!-- Card img -->
                             <img :src="store.getImagePath(item)" alt="Work Thumb" class="w-100 h-100">
                         </div>
                     </div>
